@@ -42,8 +42,8 @@ exports.handler = async (event) => {
     const offerId = rawOffer.split("_")[0];
     const checkoutSlug = rawOffer;
 
-    const clientId = process.env.CAKTO_CLIENT_ID || "ShJE3AjBrUUAwSistx9lYJfdiIoueXEbszEs99nw";
-    const clientSecret = process.env.CAKTO_CLIENT_SECRET || "z3BBrHcspqseJj3hQ6ax4VWAgqdsFDRqfquGKG7Dfyrh6UUROXpJG0nVdpSOiLSJvO9XjClpe9jqdt4j4UK6bI17N9Mus4iNTRci9VZt2vAlalHP9qJkMf4fwX8jdojJ";
+    const clientId = process.env.CAKTO_CLIENT_ID || "";
+    const clientSecret = process.env.CAKTO_CLIENT_SECRET || "";
 
     let txId = "cakto_" + Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
     let samplePix = `00020126360014BR.GOV.BCB.PIX0114+551199999999520400005303986540${valueCents}5802BR5916SUPER KIT KIDS6009SAO PAULO62070503***6304${txId.slice(0, 4)}`;
