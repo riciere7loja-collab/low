@@ -134,13 +134,15 @@ class CustomHandler(SimpleHTTPRequestHandler):
             product = payload.get("product", "Super Combo VIP")
             
             cfg = load_json(CONFIG_FILE, {})
-            offer_id = cfg.get("CAKTO_OFFER_KIT_1", "335timr") if value_cents <= 1000 else cfg.get("CAKTO_OFFER_KIT_2", "tbaxcei")
+            raw_offer = cfg.get("CAKTO_OFFER_KIT_1", "q3ekihz_1162890") if value_cents <= 1000 else cfg.get("CAKTO_OFFER_KIT_2", "bvdwj3n_1162919")
+            offer_id = raw_offer.split("_")[0]
+            checkout_slug = raw_offer
 
             cakto_token = get_cakto_access_token()
             tx_id = f"cakto_{uuid.uuid4().hex[:8]}"
             sample_pix_code = f"00020126360014BR.GOV.BCB.PIX0114+551199999999520400005303986540{value_cents}5802BR5916SUPER KIT KIDS6009SAO PAULO62070503***6304{tx_id[:4]}"
             qr_image_url = f"https://api.qrserver.com/v1/create-qr-code/?size=250x250&data={urllib.parse.quote(sample_pix_code)}"
-            checkout_url = f"https://pay.cakto.com.br/{offer_id}?name={urllib.parse.quote(cust_name)}&email={urllib.parse.quote(cust_email)}&phone={urllib.parse.quote(cust_phone)}"
+            checkout_url = f"https://pay.cakto.com.br/{checkout_slug}?name={urllib.parse.quote(cust_name)}&email={urllib.parse.quote(cust_email)}&phone={urllib.parse.quote(cust_phone)}"
 
             # Se houver token da Cakto, tenta criar pagamento real via endpoint /payments/
             if cakto_token:

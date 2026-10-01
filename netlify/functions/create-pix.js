@@ -36,9 +36,11 @@ exports.handler = async (event) => {
     const custPhone = payload.phone || "";
     const product = payload.product || "Super Combo VIP (+450 Atividades + 3 Bônus)";
 
-    const offerId = valueCents <= 1000 
-      ? (process.env.CAKTO_OFFER_KIT_1 || "335timr")
-      : (process.env.CAKTO_OFFER_KIT_2 || "tbaxcei");
+    const rawOffer = valueCents <= 1000 
+      ? (process.env.CAKTO_OFFER_KIT_1 || "q3ekihz_1162890")
+      : (process.env.CAKTO_OFFER_KIT_2 || "bvdwj3n_1162919");
+    const offerId = rawOffer.split("_")[0];
+    const checkoutSlug = rawOffer;
 
     const clientId = process.env.CAKTO_CLIENT_ID || "ShJE3AjBrUUAwSistx9lYJfdiIoueXEbszEs99nw";
     const clientSecret = process.env.CAKTO_CLIENT_SECRET || "z3BBrHcspqseJj3hQ6ax4VWAgqdsFDRqfquGKG7Dfyrh6UUROXpJG0nVdpSOiLSJvO9XjClpe9jqdt4j4UK6bI17N9Mus4iNTRci9VZt2vAlalHP9qJkMf4fwX8jdojJ";
@@ -46,7 +48,7 @@ exports.handler = async (event) => {
     let txId = "cakto_" + Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
     let samplePix = `00020126360014BR.GOV.BCB.PIX0114+551199999999520400005303986540${valueCents}5802BR5916SUPER KIT KIDS6009SAO PAULO62070503***6304${txId.slice(0, 4)}`;
     let qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(samplePix)}`;
-    let checkoutUrl = `https://pay.cakto.com.br/${offerId}?name=${encodeURIComponent(custName)}&email=${encodeURIComponent(custEmail)}&phone=${encodeURIComponent(custPhone)}`;
+    let checkoutUrl = `https://pay.cakto.com.br/${checkoutSlug}?name=${encodeURIComponent(custName)}&email=${encodeURIComponent(custEmail)}&phone=${encodeURIComponent(custPhone)}`;
 
     // Se houver credenciais da Cakto, tenta chamar a API pública
     if (clientId && clientSecret) {
