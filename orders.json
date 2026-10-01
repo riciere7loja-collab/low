@@ -1,0 +1,45 @@
+[
+  {
+    "id": "cakto_c919e14f",
+    "name": "Teste Cliente",
+    "email": "cliente@teste.com",
+    "phone": "11999998888",
+    "value": 1799,
+    "status": "paid",
+    "kit": 2,
+    "kitName": "Super Combo VIP",
+    "method": "pix",
+    "gateway": "cakto",
+    "offerId": "tbaxcei",
+    "checkoutUrl": "https://pay.cakto.com.br/tbaxcei?name=Teste%20Cliente&email=cliente%40teste.com&phone=11999998888",
+    "createdAt": "2026-10-01T12:52:49.283622",
+    "source": "direto",
+    "paidAt": "2026-10-01T12:54:13.991134"
+  },
+  {
+    "id": "pix_38d0a28a",
+    "name": "antonioriciere",
+    "email": "antonioriciere@jupiter.com.br",
+    "phone": "5145345145145145132",
+    "value": 1799,
+    "status": "pending",
+    "kit": 2,
+    "kitName": "Super Combo VIP (+450 Atividades + 3 Bônus)",
+    "method": "pix",
+    "createdAt": "2026-10-01T12:07:26.979987",
+    "source": "direto"
+  },
+  {
+    "id": "pix_c4b0331c",
+    "name": "Maria Silva",
+    "email": "maria@gmail.com",
+    "phone": "11999998888",
+    "value": 1799,
+    "status": "paid",
+    "kit": 2,
+    "kitName": "Super Combo VIP",
+    "method": "pix",
+    "createdAt": "2026-10-01T12:03:20.042201",
+    "source": "direto"
+  }
+]

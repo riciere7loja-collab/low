@@ -1,0 +1,9 @@
+{
+  "name": "painel-admin",
+  "version": "1.0.0",
+  "description": "Painel Administrativo Universal para E-commerce com rastreio ao vivo, gestão de pedidos, gráficos e integrações",
+  "main": "admin/index.html",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.0"
+  }
+}

@@ -1,0 +1,82 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# ==============================================================================
+# REDIRECTS DO PAINEL ADMINISTRATIVO & TRACKING
+# ==============================================================================
+
+[[redirects]]
+  from = "/api/admin/login"
+  to = "/.netlify/functions/admin-login"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/summary"
+  to = "/.netlify/functions/admin-summary"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/orders"
+  to = "/.netlify/functions/admin-orders"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/order-update"
+  to = "/.netlify/functions/admin-order-update"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/live"
+  to = "/.netlify/functions/admin-live"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/settings"
+  to = "/.netlify/functions/admin-settings"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/pixel-test"
+  to = "/.netlify/functions/admin-pixel-test"
+  status = 200
+
+[[redirects]]
+  from = "/api/settings"
+  to = "/.netlify/functions/site-settings"
+  status = 200
+
+[[redirects]]
+  from = "/api/track"
+  to = "/.netlify/functions/track"
+  status = 200
+
+[[redirects]]
+  from = "/api/webhook/propix"
+  to = "/.netlify/functions/webhook-propix"
+  status = 200
+
+[[redirects]]
+  from = "/api/create-pix"
+  to = "/.netlify/functions/create-pix"
+  status = 200
+
+[[redirects]]
+  from = "/api/check-pix"
+  to = "/.netlify/functions/check-pix"
+  status = 200
+
+[[redirects]]
+  from = "/api/webhook/cakto"
+  to = "/.netlify/functions/webhook-cakto"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  status = 200

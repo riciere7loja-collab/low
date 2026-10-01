@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lousa Mágica Digital LCD 8.5" - Especial Dia das Crianças</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            fun: ['Fredoka', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              purple: '#6C5CE7',
+              pink: '#FD79A8',
+              yellow: '#FDCB6E',
+              blue: '#0984E3',
+              green: '#00B894',
+              dark: '#2D3436',
+              softBg: '#F8FAFC'
+            }
+          },
+          keyframes: {
+            pulseGlow: {
+              '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 20px rgba(0, 184, 148, 0.5)' },
+              '50%': { transform: 'scale(1.03)', boxShadow: '0 0 35px rgba(0, 184, 148, 0.85)' },
+            }
+          },
+          animation: {
+            'pulse-glow': 'pulseGlow 2s infinite ease-in-out',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F7FAFC] text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-brand-pink selection:text-white">
+
+  <div id="top-bar" class="bg-gradient-to-r from-red-600 via-rose-500 to-amber-500 text-white text-xs sm:text-sm font-semibold py-2.5 px-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-2 text-center">
+      <span class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-sm px-2.5 py-0.5 rounded-full uppercase tracking-wider text-[11px] font-bold">
+        <svg class="w-3.5 h-3.5 text-yellow-300 animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z"/></svg>
+        Edição Especial de Outubro
+      </span>
+      <span>🔥 <strong>Oferta Relâmpago Dia das Crianças:</strong> Frete Grátis acima de R$ 49 + Envio Imediato</span>
+      <div class="inline-flex items-center bg-black/30 rounded-lg px-2 py-0.5 font-mono font-bold text-yellow-300 ml-1">
+        ⏳ <span id="timer" class="ml-1 tracking-widest">14:59</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="relative overflow-hidden bg-gradient-to-b from-indigo-50 via-white to-[#F7FAFC] pt-6 pb-12 sm:pt-10 sm:pb-16 border-b border-indigo-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <!-- Trust badge row -->
+      <div class="flex items-center justify-center gap-2 mb-4">
+        <div class="flex text-amber-400">
+          ★★★★★
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-slate-600">
+          Mais de <strong>4.850 pais</strong> aprovaram este mês!
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="font-fun font-bold text-3xl sm:text-5xl leading-tight text-slate-900 tracking-tight">
+          O presente ideal pro <span class="text-brand-purple underline decoration-brand-yellow decoration-wavy decoration-2">Dia das Crianças</span>: Estimule a criatividade longe das telas!
+        </h1>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+          Chega de paredes riscadas e horas no celular. Com a <strong>Lousa Mágica LCD 8.5"</strong>, as crianças desenham, escrevem e apagam com apenas 1 clique!
+        </p>
+      </div>
+
+      <!-- Product Showcase & Price Cards -->
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <!-- Visual Mockup Canvas -->
+        <div class="md:col-span-6 flex justify-center">
+          <div class="relative w-full max-w-sm">
+            <div class="absolute -top-3 -left-3 bg-brand-pink text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg transform -rotate-6 z-20">
+              🎉 50% OFF HOJE
+            </div>
+            
+            <!-- Tablet Simulation Visual -->
+            <div class="relative bg-slate-900 rounded-3xl p-4 shadow-2xl border-4 border-brand-purple/20 transition-transform duration-300 hover:scale-[1.02]">
+              <!-- Top slot for pen -->
+              <div class="flex justify-between items-center mb-2 px-2">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400">LCD Magic Pad 8.5"</span>
+                <span class="w-16 h-2 bg-slate-700 rounded-full"></span>
+              </div>
+              <!-- Inner Screen (Drawing) -->
+              <div class="relative bg-slate-950 rounded-2xl h-72 sm:h-80 border-2 border-slate-800 flex flex-col items-center justify-center overflow-hidden p-4 select-none">
+                <svg class="w-full h-full text-emerald-400 opacity-90 drop-shadow-[0_0_8px_rgba(52,211,153,0.8)]" viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Rocket doodle -->
+                  <path d="M150 40 C120 90 120 160 120 190 L180 190 C180 160 180 90 150 40 Z" stroke="#38bdf8"/>
+                  <circle cx="150" cy="110" r="15" stroke="#facc15"/>
+                  <path d="M120 160 L90 190 L120 190 Z" fill="#38bdf8"/>
+                  <path d="M180 160 L210 190 L180 190 Z" fill="#38bdf8"/>
+                  <path d="M135 190 C135 220 150 240 150 240 C150 240 165 220 165 190" stroke="#f43f5e" stroke-dasharray="4 2"/>
+                  <!-- Stars & playful texts -->
+                  <path d="M60 80 L65 95 L80 95 L68 105 L72 120 L60 110 L48 120 L52 105 L40 95 L55 95 Z" stroke="#a78bfa" fill="#a78bfa" fill-opacity="0.2"/>
+                  <path d="M240 70 L243 80 L253 80 L245 87 L248 97 L240 90 L232 97 L235 87 L227 80 L237 80 Z" stroke="#f472b6" fill="#f472b6" fill-opacity="0.2"/>
+                  <text x="50%" y="275" text-anchor="middle" fill="#34d399" font-size="14" font-weight="bold" font-family="Fredoka">Criatividade sem limites!</text>
+                </svg>
+                
+                <span class="absolute bottom-2 text-[10px] text-slate-500 font-mono tracking-wider">Zero Radiação • Seguro para Olhos</span>
+              </div>
+
+              <!-- Bottom Delete Button Simulation -->
+              <div class="mt-3 flex justify-center">
+                <button class="w-10 h-10 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center text-slate-300 shadow hover:text-white transition">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                </button>
+              </div>
+            </div>
+            
+            <p class="text-center text-xs text-slate-500 mt-2">Acompanha caneta Stylus anatômica + bateria inclusa pronta para uso.</p>
+          </div>
+        </div>
+
+        <!-- Conversion Box -->
+        <div class="md:col-span-6 bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-slate-100 relative">
+          <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+            Disponível em Estoque Brasil 🇧🇷
+          </div>
+
+          <h2 class="text-2xl sm:text-3xl font-fun font-bold text-slate-900 leading-snug">
+            Leve diversão que educa e protege a visão
+          </h2>
+          
+          <ul class="mt-4 space-y-2.5 text-sm sm:text-base text-slate-600">
+            <li class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> <strong>Sem papel e sem tinta:</strong> Chega de manchas no sofá e na parede
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> <strong>Tela LCD Anti-Reflexo:</strong> Proteção total para os olhos dos pequenos
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> <strong>Botão de Apagar Instantâneo:</strong> Diversão que recomeça na hora
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> <strong>Bateria com duração de até 12 meses</strong> (substituível)
+            </li>
+          </ul>
+
+          <div class="mt-6 pt-5 border-t border-slate-100">
+            <div class="flex items-baseline gap-3">
+              <span class="text-xs sm:text-sm text-slate-400 line-through">De R$ 59,90</span>
+              <span class="text-3xl sm:text-4xl font-extrabold text-slate-900">R$ 29,90</span>
+              <span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded">-50%</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1">Ou leve o <strong>Combo 2 Unidades</strong> por apenas <strong>R$ 49,90</strong> (Frete Grátis)</p>
+          </div>
+
+          <!-- CTAs -->
+          <div class="mt-6 flex flex-col gap-3">
+            <a href="#ofertas" class="animate-pulse-glow w-full py-4 px-6 bg-brand-green hover:bg-emerald-600 text-white font-fun font-bold text-lg sm:text-xl rounded-2xl text-center shadow-lg transition-all transform hover:-translate-y-0.5">
+              COMPRAR AGORA COM DESCONTO
+            </a>
+            <p class="text-center text-xs text-slate-400 flex items-center justify-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Garantia de 7 dias ou seu dinheiro de volta • Compra 100% Segura
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-12 sm:py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-brand-purple font-fun font-bold uppercase text-sm tracking-wider">Tranquilidade Garantida</span>
+        <h2 class="font-fun font-bold text-2xl sm:text-4xl text-slate-900 mt-1">
+          Por que mães, pais e professores amam este brinquedo?
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Projetada para entreter por horas sem cansar os olhos ou gerar bagunça pela casa.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Benefit 1 -->
+        <div class="p-6 rounded-2xl bg-indigo-50/60 border border-indigo-100/70 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-brand-purple text-white flex items-center justify-center text-2xl mb-4 shadow">
+            📵
+          </div>
+          <h3 class="font-bold text-lg text-slate-900">Zero Luz Azul</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Tela fosca sem reflexo e sem radiação. Não cansa nem agride a visão dos pequenos, ao contrário do celular.
+          </p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="p-6 rounded-2xl bg-amber-50/60 border border-amber-100/70 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center text-2xl mb-4 shadow">
+            🧹
+          </div>
+          <h3 class="font-bold text-lg text-slate-900">Zero Sujeira</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Sem canetinhas manchando as mãos, roupas ou as paredes da sala. Diversão limpa para a paz dos pais.
+          </p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="p-6 rounded-2xl bg-emerald-50/60 border border-emerald-100/70 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-brand-green text-white flex items-center justify-center text-2xl mb-4 shadow">
+            🌱
+          </div>
+          <h3 class="font-bold text-lg text-slate-900">Eco-Amigável</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Equivale a mais de 50.000 folhas de papel! Economize dinheiro em blocos e cadernos descartados no lixo.
+          </p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="p-6 rounded-2xl bg-pink-50/60 border border-pink-100/70 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-brand-pink text-white flex items-center justify-center text-2xl mb-4 shadow">
+            🚗
+          </div>
+          <h3 class="font-bold text-lg text-slate-900">Leve e Portátil</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Super fina e resistente a quedas leves. O companheiro perfeito para passeios de carro, restaurantes e viagens.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-slate-50 border-y border-slate-200/60">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center">
+        <h2 class="font-fun font-bold text-2xl sm:text-3xl text-slate-900">Super Simples de Usar</h2>
+        <p class="text-slate-600 text-sm mt-1">Pronto para brincar assim que sai da caixa!</p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-10 h-10 bg-brand-purple/10 text-brand-purple rounded-full font-bold flex items-center justify-center mx-auto mb-3">1</div>
+          <h4 class="font-bold text-slate-900">Retire a Caneta</h4>
+          <p class="text-xs text-slate-500 mt-1">A caneta encaixa no próprio corpo da lousa para nunca perder.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-10 h-10 bg-brand-purple/10 text-brand-purple rounded-full font-bold flex items-center justify-center mx-auto mb-3">2</div>
+          <h4 class="font-bold text-slate-900">Crie à Vontade</h4>
+          <p class="text-xs text-slate-500 mt-1">Desenhos coloridos, continhas de matemática ou jogo da velha.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-10 h-10 bg-brand-purple/10 text-brand-purple rounded-full font-bold flex items-center justify-center mx-auto mb-3">3</div>
+          <h4 class="font-bold text-slate-900">Aperte para Apagar</h4>
+          <p class="text-xs text-slate-500 mt-1">Em 0.5 segundo a tela volta a ficar limpinha para um novo desenho.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ofertas" class="py-14 sm:py-20 bg-gradient-to-b from-white to-indigo-50/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-xl mx-auto">
+        <span class="bg-red-100 text-red-700 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider">
+          Tempo Limitado
+        </span>
+        <h2 class="font-fun font-bold text-3xl sm:text-4xl text-slate-900 mt-2">
+          Escolha a melhor oferta para presentear:
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Dica: Leve o <strong>Combo 2x</strong> para não dar briga entre irmãos ou presentear sobrinhos e afilhados!
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- Offer 1: Single unit -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+          <div>
+            <div class="text-xs font-bold uppercase text-slate-500 tracking-wider">Opção Individual</div>
+            <h3 class="font-fun font-bold text-xl sm:text-2xl text-slate-900 mt-1">1x Lousa Mágica 8.5"</h3>
+            <p class="text-xs text-slate-500 mt-1">Ideal para filho único ou lembrancinha individual.</p>
+
+            <div class="mt-6">
+              <span class="text-slate-400 line-through text-sm">De R$ 59,90</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-extrabold text-slate-900">R$ 29,90</span>
+                <span class="text-xs text-slate-500">+ frete calculado</span>
+              </div>
+            </div>
+
+            <ul class="mt-6 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2">✓ 1x Lousa LCD 8.5"</li>
+              <li class="flex items-center gap-2">✓ 1x Caneta Stylus anatômica</li>
+              <li class="flex items-center gap-2">✓ 1x Bateria já instalada</li>
+              <li class="flex items-center gap-2">✓ Cores sortidas (Azul, Rosa ou Preto)</li>
+            </ul>
+          </div>
+
+          <button onclick="openCheckout('1x Lousa Mágica 8.5', '29.90')" class="mt-8 w-full py-3.5 px-4 bg-slate-900 hover:bg-slate-800 text-white font-fun font-bold rounded-xl transition text-center shadow">
+            QUERO 1 UNIDADE
+          </button>
+        </div>
+
+        <!-- Offer 2: Bundle 2 units (Best Seller) -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-brand-purple shadow-xl relative flex flex-col justify-between transform md:-translate-y-2">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-purple to-brand-pink text-white text-xs font-bold py-1 px-4 rounded-full uppercase tracking-wider shadow">
+            ⭐ MAIS VENDIDO • ECONOMIZE R$ 10
+          </div>
+
+          <div>
+            <div class="text-xs font-bold uppercase text-brand-purple tracking-wider">Super Combo Promocional</div>
+            <h3 class="font-fun font-bold text-xl sm:text-2xl text-slate-900 mt-1">Kit com 2x Lousas Mágicas</h3>
+            <p class="text-xs text-slate-500 mt-1">Perfeito para irmãos, primos ou presentear 2 crianças gastando pouco.</p>
+
+            <div class="mt-6">
+              <span class="text-slate-400 line-through text-sm">De R$ 119,80</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-extrabold text-brand-purple">R$ 49,90</span>
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">FRETE GRÁTIS</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">Sai apenas <strong>R$ 24,95</strong> por unidade!</p>
+            </div>
+
+            <ul class="mt-6 space-y-2 text-sm text-slate-600 font-medium">
+              <li class="flex items-center gap-2 text-slate-800 font-semibold">✓ 2x Lousas LCD 8.5"</li>
+              <li class="flex items-center gap-2">✓ 2x Canetas Stylus inclusas</li>
+              <li class="flex items-center gap-2">✓ 2x Baterias prontas para uso</li>
+              <li class="flex items-center gap-2 text-emerald-600 font-bold">✓ Frete Grátis incluso para todo o Brasil</li>
+            </ul>
+          </div>
+
+          <button onclick="openCheckout('Combo 2x Lousas Mágicas (Frete Grátis)', '49.90')" class="mt-8 w-full py-4 px-4 bg-brand-green hover:bg-emerald-600 text-white font-fun font-bold text-lg rounded-xl shadow-lg transition-transform transform hover:scale-[1.02] text-center">
+            LEVAR COMBO 2 UNIDADES
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Trust signals bar -->
+      <div class="mt-12 bg-white rounded-2xl p-4 border border-slate-200/80 flex flex-wrap items-center justify-around gap-4 text-xs text-slate-600">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">🔒</span>
+          <span>Pagamento Seguro via <strong>PIX ou Cartão</strong></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-lg">📦</span>
+          <span>Código de Rastreio por WhatsApp e E-mail</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-lg">🛡️</span>
+          <span>Garantia de Satisfação de 7 Dias</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-xl mx-auto">
+        <h2 class="font-fun font-bold text-2xl sm:text-3xl text-slate-900">
+          O que dizem os pais que já compraram:
+        </h2>
+        <p class="text-slate-600 text-sm mt-1">Mais de 98% de aprovação e avaliações 5 estrelas.</p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center font-bold text-pink-600">
+              MC
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Mariana Costa</h4>
+              <p class="text-xs text-slate-400">Mãe do Theo (4 anos) • São Paulo, SP</p>
+            </div>
+          </div>
+          <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            "Comprei o combo com 2 para os meus dois filhos não brigarem. Foi a melhor coisa! Usam no carro e na mesa do restaurante. Ficou bem mais fácil sair sem ter que dar a tela do celular."
+          </p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600">
+              RS
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Rodrigo Silva</h4>
+              <p class="text-xs text-slate-400">Pai da Alice (6 anos) • Curitiba, PR</p>
+            </div>
+          </div>
+          <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            "Chegou super rápido, bem embalado. A tela não machuca os olhos e é muito leve. A pequena treina as letrinhas e apaga rapidinho. Recomendo demais pelo preço!"
+          </p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-emerald-600">
+              AL
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Amanda Lima</h4>
+              <p class="text-xs text-slate-400">Tia coruja • Belo Horizonte, MG</p>
+            </div>
+          </div>
+          <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            "Presente barato e com valor enorme! Minha sobrinha não larga mais. Acabou o problema de giz de cera quebrado e risco no sofá. Comprarei de novo no Natal."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-6 sm:p-8 border border-amber-200/80 flex flex-col sm:flex-row items-center gap-6">
+        <div class="w-24 h-24 shrink-0 rounded-2xl bg-amber-400/20 border-2 border-amber-400 flex flex-col items-center justify-center text-center p-2 text-amber-700 font-fun">
+          <span class="text-2xl font-bold leading-none">7</span>
+          <span class="text-[10px] uppercase font-bold tracking-wider leading-tight">Dias de Garantia</span>
+        </div>
+        <div>
+          <h3 class="font-fun font-bold text-xl sm:text-2xl text-slate-900">
+            Risco Zero: Teste por 7 dias!
+          </h3>
+          <p class="text-slate-600 text-sm mt-1 leading-relaxed">
+            Se você receber a Lousa Mágica e por qualquer motivo seu pequeno não amar, ou se o produto apresentar qualquer defeito, você tem até <strong>7 dias</strong> para solicitar reembolso total sem complicação.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-8">
+        <h2 class="font-fun font-bold text-2xl sm:text-3xl text-slate-900">Perguntas Frequentes</h2>
+        <p class="text-slate-600 text-sm mt-1">Tire todas as suas dúvidas antes de pedir:</p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>A lousa já vem com bateria e caneta?</span>
+            <span id="faq-icon-1" class="text-lg transition-transform">+</span>
+          </button>
+          <div id="faq-content-1" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3">
+            Sim! A lousa vai 100% pronta para uso, acompanhada de caneta Stylus especial e bateria instalada com duração média de até 1 ano.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>A tela emite luz ou cansa a visão?</span>
+            <span id="faq-icon-2" class="text-lg transition-transform">+</span>
+          </button>
+          <div id="faq-content-2" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3">
+            Não! A tecnologia LCD fosca utiliza iluminação ambiente natural, ou seja, ela não emite luz azul e não possui radiação, sendo completamente segura para os olhos das crianças de qualquer idade.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>Qual o prazo de envio para o Dia das Crianças?</span>
+            <span id="faq-icon-3" class="text-lg transition-transform">+</span>
+          </button>
+          <div id="faq-content-3" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3">
+            Os pedidos são despachados em até 24 horas úteis com código de rastreamento enviado diretamente no seu WhatsApp e e-mail para acompanhar a entrega.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(4)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>Existe trava para não apagar o desenho sem querer?</span>
+            <span id="faq-icon-4" class="text-lg transition-transform">+</span>
+          </button>
+          <div id="faq-content-4" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3">
+            Sim! Atrás da lousa há uma pequena chavinha de trava de segurança. Ao acioná-la, o botão frontal de apagar é desativado para proteger o desenho da criança.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-400 py-10 text-xs border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-4">
+      <div class="font-fun text-lg text-white font-bold tracking-wide">
+        LOUSA MÁGICA LCD 8.5" • OFICIAL
+      </div>
+      <p class="max-w-xl mx-auto text-slate-500">
+        Este site não é afiliado ao Facebook ou a qualquer entidade do Meta. Todos os direitos reservados © 2026.
+      </p>
+      <div class="flex justify-center gap-4 text-slate-400">
+        <span>Termos de Uso</span>
+        <span>•</span>
+        <span>Políticas de Privacidade</span>
+        <span>•</span>
+        <span>Rastreamento</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+      
+      <!-- Close button -->
+      <button onclick="closeCheckout()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 transition">
+        ✕
+      </button>
+
+      <div class="text-center">
+        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase">
+          Finalizar Pedido Rápido
+        </span>
+        <h3 id="modal-product-title" class="font-fun font-bold text-xl text-slate-900 mt-2">
+          Lousa Mágica LCD 8.5"
+        </h3>
+        <p class="text-xs text-slate-500 mt-1">Preencha seus dados para receber o código PIX / Link seguro:</p>
+      </div>
+
+      <form id="checkout-form" onsubmit="handleFormSubmit(event)" class="mt-5 space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Seu Nome Completo:</label>
+          <input type="text" id="cust-name" required placeholder="Ex: Maria Oliveira" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-purple">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp (para receber o rastreio):</label>
+          <input type="tel" id="cust-phone" required placeholder="(11) 99999-9999" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-purple">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">CEP de Entrega:</label>
+          <input type="text" id="cust-cep" placeholder="00000-000" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-purple">
+        </div>
+
+        <div class="pt-2">
+          <div class="flex justify-between text-sm font-bold text-slate-800 mb-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <span>Total da Oferta:</span>
+            <span id="modal-price" class="text-brand-purple">R$ 29,90</span>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 px-4 bg-brand-green hover:bg-emerald-600 text-white font-fun font-bold text-base rounded-xl transition shadow-lg flex items-center justify-center gap-2">
+          <span>PAGAR COM PIX (APROVAÇÃO NA HORA)</span>
+        </button>
+
+        <p class="text-[11px] text-center text-slate-400 mt-2">
+          🔒 Ambiente protegido. Seus dados nunca serão compartilhados.
+        </p>
+      </form>
+
+      <!-- Success Feedback View (Hidden by default) -->
+      <div id="checkout-success" class="hidden text-center py-4">
+        <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-3">
+          ✓
+        </div>
+        <h4 class="font-fun font-bold text-lg text-slate-900">Pedido Quase Concluído!</h4>
+        <p class="text-xs text-slate-600 mt-2">
+          Copie a chave Pix abaixo ou conclua o pagamento diretamente pelo WhatsApp com nossa equipe:
+        </p>
+        <div class="mt-4 p-3 bg-slate-100 rounded-xl font-mono text-xs text-slate-700 break-all select-all border border-dashed border-slate-300">
+          00020126360014BR.GOV.BCB.PIX0114+551199999999520400005303986
+        </div>
+        <button onclick="copyPixCode()" class="mt-2 text-xs font-bold text-brand-purple hover:underline">
+          📋 Copiar Código Pix
+        </button>
+        <div class="mt-4">
+          <a id="whatsapp-link" href="#" target="_blank" class="block w-full py-2.5 px-4 bg-[#25D366] hover:bg-emerald-600 text-white font-bold text-sm rounded-xl text-center">
+            Concluir pelo WhatsApp 💬
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Countdown Timer (15 minutes urgency loop)
+    let totalSeconds = 14 * 60 + 59;
+    const timerEl = document.getElementById('timer');
+    setInterval(() => {
+      if (totalSeconds > 0) {
+        totalSeconds--;
+        const m = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
+        const s = (totalSeconds % 60).toString().padStart(2, '0');
+        timerEl.textContent = `${m}:${s}`;
+      }
+    }, 1000);
+
+    // 2. FAQ Accordion Toggle
+    function toggleFaq(id) {
+      const content = document.getElementById(`faq-content-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+      const isHidden = content.classList.contains('hidden');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+
+    // 3. Checkout Modal Handling
+    let selectedProduct = "1x Lousa Mágica 8.5'";
+    let selectedPrice = "29.90";
+
+    function openCheckout(productName, price) {
+      selectedProduct = productName;
+      selectedPrice = price;
+      document.getElementById('modal-product-title').textContent = productName;
+      document.getElementById('modal-price').textContent = `R$ ${price.replace('.', ',')}`;
+      
+      // Reset view states
+      document.getElementById('checkout-form').classList.remove('hidden');
+      document.getElementById('checkout-success').classList.add('hidden');
+      
+      document.getElementById('checkout-modal').classList.remove('hidden');
+    }
+
+    function closeCheckout() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const phone = document.getElementById('cust-phone').value;
+
+      // Prepare WhatsApp message
+      const msg = encodeURIComponent(`Olá! Gostaria de confirmar meu pedido de Dia das Crianças:\n- Produto: ${selectedProduct}\n- Valor: R$ ${selectedPrice}\n- Nome: ${name}\n- WhatsApp: ${phone}`);
+      document.getElementById('whatsapp-link').href = `https://api.whatsapp.com/send?phone=5599999999999&text=${msg}`;
+
+      // Switch to success view
+      document.getElementById('checkout-form').classList.add('hidden');
+      document.getElementById('checkout-success').classList.remove('hidden');
+    }
+
+    function copyPixCode() {
+      const dummyInput = document.createElement("input");
+      dummyInput.setAttribute("value", "00020126360014BR.GOV.BCB.PIX0114+551199999999520400005303986");
+      document.body.appendChild(dummyInput);
+      dummyInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummyInput);
+      
+      const copyBtn = event.target;
+      const originalText = copyBtn.innerText;
+      copyBtn.innerText = "✓ Código Copiado!";
+      setTimeout(() => {
+        copyBtn.innerText = originalText;
+      }, 2000);
+    }
+
+    // Close modal on escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCheckout();
+    });
+  </script>
+</body>
+</html>

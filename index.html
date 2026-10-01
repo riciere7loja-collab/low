@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Kit Digital de Atividades Infantis para Imprimir - Especial Dia das Crianças</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            fun: ['Fredoka', 'sans-serif'],
+          },
+          colors: {
+            kids: {
+              purple: '#6C5CE7',
+              pink: '#FF5E97',
+              yellow: '#FDCB6E',
+              orange: '#FF7675',
+              blue: '#0984E3',
+              green: '#00B894',
+              teal: '#00CEC9',
+              dark: '#1E293B',
+              bgLight: '#F8FAFC'
+            }
+          },
+          keyframes: {
+            wiggle: {
+              '0%, 100%': { transform: 'rotate(-3deg)' },
+              '50%': { transform: 'rotate(3deg)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 20px rgba(0, 184, 148, 0.4)' },
+              '50%': { transform: 'scale(1.025)', boxShadow: '0 0 35px rgba(0, 184, 148, 0.75)' },
+            }
+          },
+          animation: {
+            'wiggle': 'wiggle 2s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 2.2s infinite ease-in-out',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbar and subtle pattern */
+    .kids-dots {
+      background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-kids-bgLight text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-kids-pink selection:text-white">
+
+  <!-- Top Notification Bar: Urgência Dia das Crianças -->
+  <div id="top-bar" class="bg-gradient-to-r from-red-600 via-rose-500 to-amber-500 text-white text-xs sm:text-sm font-semibold py-2.5 px-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-2 text-center">
+      <span class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-sm px-2.5 py-0.5 rounded-full uppercase tracking-wider text-[11px] font-bold">
+        ⚡ Especial Dia das Crianças (12 de Outubro)
+      </span>
+      <span>📦 <strong>Entrega Digital Imediata:</strong> Receba no seu E-mail & WhatsApp após o PIX</span>
+      <div class="inline-flex items-center bg-black/35 rounded-lg px-2.5 py-0.5 font-mono font-bold text-yellow-300 ml-1">
+        ⏳ Oferta expira em: <span id="timer" class="ml-1 tracking-widest">11:48</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="relative overflow-hidden bg-gradient-to-b from-indigo-50/80 via-white to-kids-bgLight pt-8 pb-16 sm:pt-12 sm:pb-24 border-b border-indigo-100/50 kids-dots">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <!-- Trust badge row -->
+      <div class="flex items-center justify-center gap-2 mb-4">
+        <div class="flex text-amber-400 text-sm">
+          ★★★★★
+        </div>
+        <span class="text-xs sm:text-sm font-semibold text-slate-600">
+          Mais de <strong>6.840 famílias e educadores</strong> já transformaram a rotina dos pequenos!
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="inline-block bg-kids-purple/10 text-kids-purple font-fun font-bold text-xs sm:text-sm uppercase tracking-wider px-3.5 py-1 rounded-full mb-3">
+          🎨 O Presente Ideal Sem Telas & Sem Bagunça
+        </span>
+        <h1 class="font-fun font-bold text-3xl sm:text-5xl lg:text-5xl leading-tight text-slate-900 tracking-tight">
+          Tire seus filhos das telas com o <br class="hidden sm:block"/>
+          <span class="text-kids-purple underline decoration-kids-yellow decoration-wavy decoration-2">Super Kit Digital de Atividades</span> <br class="hidden sm:block"/>
+          para Imprimir em Casa!
+        </h1>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto">
+          São <strong>+450 atividades lúdicas e pedagógicas em PDF</strong> de altíssima resolução. Estimule a imaginação, foco e coordenação motora dos seus filhos pagando menos do que um lanche!
+        </p>
+      </div>
+
+      <!-- Key Benefits Micro-Badges -->
+      <div class="mt-6 flex flex-wrap justify-center items-center gap-3 text-xs sm:text-sm font-semibold text-slate-700">
+        <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-sm">
+          🚀 <strong class="text-kids-purple">Acesso Imediato</strong> no E-mail
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-sm">
+          🖨️ Imprima <strong class="text-emerald-600">quantas vezes quiser</strong>
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-sm">
+          👶 Para idades de <strong class="text-kids-pink">2 a 10 anos</strong>
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-sm">
+          ♾️ Acesso <strong class="text-blue-600">Vitalício</strong>
+        </span>
+      </div>
+
+      <!-- Showcase Box & Conversion Block -->
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Visual Mockup Showcase -->
+        <div class="lg:col-span-7 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <!-- Promo Badge -->
+            <div class="absolute -top-3 -left-3 bg-kids-pink text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg transform -rotate-6 z-20">
+              🎉 70% OFF • ESPECIAL OUTUBRO
+            </div>
+
+            <div class="absolute -bottom-3 -right-3 bg-emerald-500 text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-lg z-20 flex items-center gap-1">
+              ✓ PDF Pronto Para Imprimir
+            </div>
+
+            <!-- Visual 3D Stack Mockup Representation -->
+            <div class="relative bg-white rounded-3xl p-6 shadow-2xl border-2 border-indigo-100">
+              
+              <!-- Top Ribbon -->
+              <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-red-400 inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-yellow-400 inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-emerald-400 inline-block"></span>
+                  <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Combo Completo em PDF</span>
+                </div>
+                <span class="bg-indigo-50 text-kids-purple text-[10px] font-bold px-2 py-0.5 rounded-md">Alta Resolução A4</span>
+              </div>
+
+              <!-- Visual Books/Modules Grid Preview -->
+              <div class="grid grid-cols-2 gap-3">
+                <!-- Book 1: Colorir -->
+                <div class="bg-gradient-to-br from-pink-500 to-rose-400 text-white p-3.5 rounded-2xl shadow-md flex flex-col justify-between h-36 relative overflow-hidden group">
+                  <div class="relative z-10">
+                    <span class="text-[10px] uppercase font-bold tracking-wider opacity-90">Caderno 01</span>
+                    <h3 class="font-fun font-bold text-sm leading-tight mt-0.5">Mundo Encantado de Colorir</h3>
+                    <p class="text-[11px] opacity-80 mt-1">+100 Desenhos</p>
+                  </div>
+                  <div class="text-3xl text-right opacity-90">🎨</div>
+                  <div class="absolute -right-4 -bottom-4 w-16 h-16 bg-white/10 rounded-full"></div>
+                </div>
+
+                <!-- Book 2: Raciocínio -->
+                <div class="bg-gradient-to-br from-purple-600 to-indigo-500 text-white p-3.5 rounded-2xl shadow-md flex flex-col justify-between h-36 relative overflow-hidden">
+                  <div class="relative z-10">
+                    <span class="text-[10px] uppercase font-bold tracking-wider opacity-90">Caderno 02</span>
+                    <h3 class="font-fun font-bold text-sm leading-tight mt-0.5">Labirintos & 7 Erros</h3>
+                    <p class="text-[11px] opacity-80 mt-1">+80 Desafios</p>
+                  </div>
+                  <div class="text-3xl text-right opacity-90">🧩</div>
+                  <div class="absolute -right-4 -bottom-4 w-16 h-16 bg-white/10 rounded-full"></div>
+                </div>
+
+                <!-- Book 3: Alfabetização -->
+                <div class="bg-gradient-to-br from-emerald-500 to-teal-500 text-white p-3.5 rounded-2xl shadow-md flex flex-col justify-between h-36 relative overflow-hidden">
+                  <div class="relative z-10">
+                    <span class="text-[10px] uppercase font-bold tracking-wider opacity-90">Caderno 03</span>
+                    <h3 class="font-fun font-bold text-sm leading-tight mt-0.5">Alfabetização & Coordenação</h3>
+                    <p class="text-[11px] opacity-80 mt-1">+90 Atividades</p>
+                  </div>
+                  <div class="text-3xl text-right opacity-90">✏️</div>
+                  <div class="absolute -right-4 -bottom-4 w-16 h-16 bg-white/10 rounded-full"></div>
+                </div>
+
+                <!-- Book 4: Recorte & Cole -->
+                <div class="bg-gradient-to-br from-amber-500 to-orange-400 text-white p-3.5 rounded-2xl shadow-md flex flex-col justify-between h-36 relative overflow-hidden">
+                  <div class="relative z-10">
+                    <span class="text-[10px] uppercase font-bold tracking-wider opacity-90">Caderno 04</span>
+                    <h3 class="font-fun font-bold text-sm leading-tight mt-0.5">Recorte, Monte & Cole</h3>
+                    <p class="text-[11px] opacity-80 mt-1">+60 Brincadeiras</p>
+                  </div>
+                  <div class="text-3xl text-right opacity-90">✂️</div>
+                  <div class="absolute -right-4 -bottom-4 w-16 h-16 bg-white/10 rounded-full"></div>
+                </div>
+              </div>
+
+              <!-- Bonus strip inside visual -->
+              <div class="mt-4 p-2.5 bg-amber-50 border border-amber-200/80 rounded-xl flex items-center justify-between text-xs text-amber-900">
+                <span class="font-bold flex items-center gap-1.5">
+                  🎁 Inclui 3 Super Bônus Exclusivos de Outubro!
+                </span>
+                <span class="bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">GRÁTIS</span>
+              </div>
+
+            </div>
+            
+            <p class="text-center text-xs text-slate-500 mt-3">Compatível com qualquer impressora comum (jato de tinta ou laser), colorida ou preto e branco.</p>
+          </div>
+        </div>
+
+        <!-- Right: Conversion Action Box -->
+        <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-slate-100 relative">
+          
+          <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+            🚀 Download Imediato em PDF
+          </div>
+
+          <h2 class="text-2xl sm:text-3xl font-fun font-bold text-slate-900 leading-snug">
+            Economize e dê diversão que educa de verdade
+          </h2>
+          
+          <ul class="mt-4 space-y-2.5 text-sm sm:text-base text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 font-bold text-lg leading-none">✓</span>
+              <span><strong>Tchau Celular e Ansiedade:</strong> Horas de foco criativo sem hiperestímulo de telas.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 font-bold text-lg leading-none">✓</span>
+              <span><strong>Imprima Quantas Vezes Quiser:</strong> Criança errou ou quer pintar de novo? Só imprimir mais!</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 font-bold text-lg leading-none">✓</span>
+              <span><strong>Economia de até R$ 250:</strong> Custa muito menos que cadernos de livraria ou brinquedos plásticos.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 font-bold text-lg leading-none">✓</span>
+              <span><strong>Sem esperar Correios:</strong> Comprou, aprovou no PIX, recebeu no segundo seguinte!</span>
+            </li>
+          </ul>
+
+          <div class="mt-6 pt-5 border-t border-slate-100">
+            <div class="flex items-baseline gap-3">
+              <span class="text-xs sm:text-sm text-slate-400 line-through">De R$ 47,00</span>
+              <span class="text-3xl sm:text-4xl font-extrabold text-kids-purple">R$ 9,99</span>
+              <span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded">-78%</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1">A partir de <strong>R$ 9,99</strong> ou Combo Completo VIP por apenas <strong>R$ 17,99</strong></p>
+          </div>
+
+          <!-- CTAs -->
+          <div class="mt-6 flex flex-col gap-3">
+            <a href="#ofertas" class="animate-pulse-glow w-full py-4 px-6 bg-kids-green hover:bg-emerald-600 text-white font-fun font-bold text-lg sm:text-xl rounded-2xl text-center shadow-lg transition-all transform hover:-translate-y-0.5 block">
+              QUERO BAIXAR O KIT COMPLETO AGORA
+            </a>
+            <p class="text-center text-xs text-slate-400 flex items-center justify-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Garantia Incondicional de 7 Dias • Satisfação ou Reembolso Total
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Problem / Agitation Section: Por que agir agora? -->
+  <section class="py-14 sm:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-kids-pink font-fun font-bold uppercase text-xs sm:text-sm tracking-wider">Você Também Passa Por Isso?</span>
+        <h2 class="font-fun font-bold text-2xl sm:text-4xl text-slate-900 mt-1 leading-snug">
+          O excesso de telas está roubando a criatividade e a paciência das crianças.
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Estudos comprovam que crianças expostas a celulares e tablets por muitas horas desenvolvem ansiedade, dificuldade de concentração e birras constantes. Veja a diferença:
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- Negative column -->
+        <div class="bg-rose-50/70 border-2 border-rose-200 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-rose-500 text-white flex items-center justify-center text-2xl mb-4 shadow">
+              📱
+            </div>
+            <h3 class="font-fun font-bold text-xl text-rose-950">Com o excesso de celular e tablet:</h3>
+            <ul class="mt-4 space-y-3 text-sm text-rose-900">
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-500 font-bold">✕</span>
+                <span><strong>Hiperestímulo constante:</strong> Vídeos curtos do YouTube que viciam e deixam a criança inquieta.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-500 font-bold">✕</span>
+                <span><strong>Birras para largar o aparelho:</strong> Estresse diário na hora de comer, tomar banho ou dormir.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-500 font-bold">✕</span>
+                <span><strong>Coordenação motora atrasada:</strong> Dificuldade futura para segurar o lápis e aprender a escrever.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-rose-200/80 text-xs text-rose-700 italic">
+            "Sem falar nos brinquedos caros de plástico que a criança ganha no Dia das Crianças e esquece na caixa 2 dias depois."
+          </div>
+        </div>
+
+        <!-- Positive column -->
+        <div class="bg-emerald-50/70 border-2 border-emerald-300 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative shadow-sm">
+          <div class="absolute -top-3 right-6 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Recomendado por Pedagogas ⭐
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center text-2xl mb-4 shadow">
+              🖍️
+            </div>
+            <h3 class="font-fun font-bold text-xl text-emerald-950">Com o Super Kit de Atividades:</h3>
+            <ul class="mt-4 space-y-3 text-sm text-emerald-900">
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Foco, calma e concentração:</strong> A criança mergulha nas cores e desafios por horas em paz.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Coordenação motora fina fortalecida:</strong> Traçados, labirintos e recortes que preparam para a escola.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-600 font-bold">✓</span>
+                <span><strong>Momentos gostosos em família:</strong> Os pais participam, elogiam e colam as obras de arte na geladeira!</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-emerald-200/80 text-xs text-emerald-800 font-semibold">
+            ✓ Uma solução acessível, reutilizável e com aprovação imediata das crianças.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Showcase: O que você vai receber -->
+  <section class="py-14 sm:py-20 bg-slate-50 border-y border-slate-200/60">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-kids-purple font-fun font-bold uppercase text-xs sm:text-sm tracking-wider">Conteúdo 100% Organizado</span>
+        <h2 class="font-fun font-bold text-2xl sm:text-4xl text-slate-900 mt-1">
+          O que vem dentro do Super Kit Digital?
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          São 5 cadernos temáticos completos + 3 Super Bônus exclusivos prontos para imprimir em formato A4 padrão.
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Module 1 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-pink-100 text-kids-pink flex items-center justify-center text-2xl mb-4 font-bold">
+            🎨
+          </div>
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Volume 1</span>
+          <h3 class="font-fun font-bold text-xl text-slate-900 mt-1">Mundo Mágico de Colorir</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            Mais de 100 desenhos infantis nítidos: animais fofinhos, dinossauros, princesas, fundo do mar, espaço sideral e profissões.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-kids-purple">
+            ✓ Traços grossos fáceis de pintar
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-purple-100 text-kids-purple flex items-center justify-center text-2xl mb-4 font-bold">
+            🧩
+          </div>
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Volume 2</span>
+          <h3 class="font-fun font-bold text-xl text-slate-900 mt-1">Raciocínio & Desafios Lógicos</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            Labirintos divertidos, jogo dos 7 erros, ligar os pontos numéricos e caça-palavras ilustrados que desenvolvem a agilidade mental.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-kids-purple">
+            ✓ Estimula a dedução e o foco
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-4 font-bold">
+            ✏️
+          </div>
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Volume 3</span>
+          <h3 class="font-fun font-bold text-xl text-slate-900 mt-1">Alfabetização & Caligrafia</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            Treino motor pontilhado, escrita das vogais e do alfabeto completo, primeiras palavrinhas e associação de imagens e sons.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-kids-purple">
+            ✓ Apoio perfeito para a fase escolar
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-blue-100 text-kids-blue flex items-center justify-center text-2xl mb-4 font-bold">
+            🔢
+          </div>
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Volume 4</span>
+          <h3 class="font-fun font-bold text-xl text-slate-900 mt-1">Matemática Divertida</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            Contagem de frutas e bichinhos, formas geométricas amigáveis, sequência numérica e continhas ilustradas simples sem mistério.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-kids-purple">
+            ✓ Ensina números de forma visual
+          </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-4 font-bold">
+            ✂️
+          </div>
+          <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Volume 5</span>
+          <h3 class="font-fun font-bold text-xl text-slate-900 mt-1">Recorte, Monte & Brinque</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            Atividades interativas com tesoura sem ponta: fantoches de dedo, máscaras de animaizinhos para montar e dobraduras fáceis.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-kids-purple">
+            ✓ Brinquedos que a própria criança cria
+          </div>
+        </div>
+
+        <!-- Module 6: Organização Prática -->
+        <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-3xl p-6 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white/20 text-yellow-300 flex items-center justify-center text-2xl mb-4 font-bold">
+              📂
+            </div>
+            <span class="text-[11px] font-bold text-indigo-300 uppercase tracking-wider">Facilidade Total</span>
+            <h3 class="font-fun font-bold text-xl text-white mt-1">Arquivos 100% Organizados</h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+              Tudo separado em pastas e arquivos PDF individuais. Você pode imprimir 1 folha por vez ou o caderno completo num clique.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 text-xs font-semibold text-yellow-300">
+            ✓ Abra no celular, tablet ou computador
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3 Exclusive Bonuses Section -->
+  <section class="py-14 sm:py-20 bg-gradient-to-b from-amber-50/50 via-white to-amber-50/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="bg-amber-100 text-amber-800 font-bold px-3.5 py-1 rounded-full text-xs uppercase tracking-wider">
+          🎁 Presentes Extras para o Dia das Crianças
+        </span>
+        <h2 class="font-fun font-bold text-2xl sm:text-4xl text-slate-900 mt-2">
+          Comprando hoje, você leva 3 Super Bônus Grátis!
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Materiais complementares avaliados em mais de R$ 75,00 que você recebe sem pagar nada a mais.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Bonus 1 -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-amber-200/80 shadow-md relative flex flex-col justify-between">
+          <div class="absolute -top-3 right-4 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+            Bônus 01
+          </div>
+          <div>
+            <div class="text-3xl mb-3">🗓️</div>
+            <h3 class="font-fun font-bold text-lg text-slate-900">Quadro de Rotina Infantil Semanal</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Organize horários de dormir, estudar, arrumar o quarto e brincar com ilustrações lúdicas que a criança adora cumprir.
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-slate-400 line-through">Valor: R$ 27,00</span>
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">HOJE: GRÁTIS</span>
+          </div>
+        </div>
+
+        <!-- Bonus 2 -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-amber-200/80 shadow-md relative flex flex-col justify-between">
+          <div class="absolute -top-3 right-4 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+            Bônus 02
+          </div>
+          <div>
+            <div class="text-3xl mb-3">💖</div>
+            <h3 class="font-fun font-bold text-lg text-slate-900">Painel das Emoções & Sentimentos</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Ajuda a criança a reconhecer sentimentos como alegria, medo, raiva e tristeza, facilitando o diálogo e diminuindo birras.
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-slate-400 line-through">Valor: R$ 29,00</span>
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">HOJE: GRÁTIS</span>
+          </div>
+        </div>
+
+        <!-- Bonus 3 -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-amber-200/80 shadow-md relative flex flex-col justify-between">
+          <div class="absolute -top-3 right-4 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+            Bônus 03
+          </div>
+          <div>
+            <div class="text-3xl mb-3">🏆</div>
+            <h3 class="font-fun font-bold text-lg text-slate-900">Certificados de "Pequeno Artista"</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Certificados coloridos para preencher com o nome da criança e premiar quando ela completar as atividades. Eleva a autoestima!
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-slate-400 line-through">Valor: R$ 19,00</span>
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">HOJE: GRÁTIS</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Activity Previewer / Folheando as Atividades -->
+  <section class="py-14 sm:py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <span class="text-kids-purple font-fun font-bold uppercase text-xs tracking-wider">Veja como é lindo por dentro</span>
+        <h2 class="font-fun font-bold text-2xl sm:text-3xl text-slate-900 mt-1">
+          Dê uma espiada nas atividades:
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-1">
+          Clique nas abas abaixo para ver exemplos reais de páginas do material:
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex flex-wrap justify-center gap-2 mb-6">
+        <button onclick="switchPreview('colorir')" id="tab-colorir" class="preview-tab active px-4 py-2 rounded-xl font-fun font-bold text-xs sm:text-sm transition bg-kids-purple text-white shadow">
+          🎨 Desenho para Colorir
+        </button>
+        <button onclick="switchPreview('labirinto')" id="tab-labirinto" class="preview-tab px-4 py-2 rounded-xl font-fun font-bold text-xs sm:text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200">
+          🧩 Labirinto Ninja
+        </button>
+        <button onclick="switchPreview('alfabeto')" id="tab-alfabeto" class="preview-tab px-4 py-2 rounded-xl font-fun font-bold text-xs sm:text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200">
+          ✏️ Treino da Letrinha
+        </button>
+      </div>
+
+      <!-- Interactive Preview Sheet Frame -->
+      <div class="bg-slate-100 rounded-3xl p-4 sm:p-8 border-2 border-slate-200 max-w-xl mx-auto shadow-inner">
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-slate-200 aspect-[1/1.3] flex flex-col justify-between relative overflow-hidden">
+          
+          <!-- Header of printable sheet -->
+          <div class="border-b-2 border-dashed border-slate-200 pb-3 flex justify-between items-center text-xs text-slate-500 font-mono">
+            <span>NOME: __________________________</span>
+            <span>DATA: ___/___</span>
+          </div>
+
+          <!-- Dynamic Sheet Content based on active tab -->
+          <div id="preview-colorir" class="preview-content my-auto text-center py-4">
+            <h4 class="font-fun font-bold text-lg text-slate-800 mb-2">Pinte o Astronauta do Espaço! 🚀</h4>
+            <div class="w-48 h-48 mx-auto my-3 flex items-center justify-center">
+              <!-- Cute Rocket SVG Doodle -->
+              <svg class="w-full h-full text-slate-800" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M100 20 C80 60 80 120 80 145 L120 145 C120 120 120 60 100 20 Z" fill="#F8FAFC"/>
+                <circle cx="100" cy="75" r="14" fill="#E2E8F0"/>
+                <path d="M80 120 L55 145 L80 145 Z" fill="#F1F5F9"/>
+                <path d="M120 120 L145 145 L120 145 Z" fill="#F1F5F9"/>
+                <path d="M90 145 C90 170 100 185 100 185 C100 185 110 170 110 145" stroke="#FF5E97" stroke-dasharray="3 3"/>
+                <!-- Stars -->
+                <path d="M40 50 L42 56 L48 56 L43 60 L45 66 L40 62 L35 66 L37 60 L32 56 L38 56 Z" fill="#FDCB6E"/>
+                <path d="M160 80 L162 86 L168 86 L163 90 L165 96 L160 92 L155 96 L157 90 L152 86 L158 86 Z" fill="#FDCB6E"/>
+              </svg>
+            </div>
+            <p class="text-xs text-slate-400 font-fun">Dica: Use giz de cera, lápis de cor ou canetinhas!</p>
+          </div>
+
+          <div id="preview-labirinto" class="preview-content hidden my-auto text-center py-4">
+            <h4 class="font-fun font-bold text-lg text-slate-800 mb-2">Ajude o Coelhinho a achar a Cenoura! 🐰🥕</h4>
+            <div class="w-48 h-48 mx-auto my-3 border-4 border-slate-800 rounded-xl p-2 relative bg-slate-50 flex items-center justify-center">
+              <svg class="w-full h-full text-slate-800" viewBox="0 0 160 160" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                <!-- Maze paths -->
+                <path d="M10 10 H150 V150 H10 Z"/>
+                <path d="M30 10 V60 H70 V40 H110 V90 H50 V130 H130 V110"/>
+                <path d="M70 110 V150"/>
+                <path d="M90 70 H130"/>
+                <text x="15" y="30" font-size="20">🐰</text>
+                <text x="125" y="145" font-size="20">🥕</text>
+              </svg>
+            </div>
+            <p class="text-xs text-slate-400 font-fun">Desenvolva a coordenação e o foco da criança!</p>
+          </div>
+
+          <div id="preview-alfabeto" class="preview-content hidden my-auto text-center py-4">
+            <h4 class="font-fun font-bold text-lg text-slate-800 mb-2">A de Abelhinha! 🐝</h4>
+            <div class="w-48 h-48 mx-auto my-3 flex flex-col items-center justify-center border-2 border-dashed border-slate-300 rounded-xl bg-slate-50 p-4">
+              <span class="font-fun font-bold text-6xl text-kids-purple">A a</span>
+              <div class="w-full border-b-2 border-slate-300 my-2"></div>
+              <p class="text-xs text-slate-500 font-mono">Passe por cima do pontilhado:</p>
+              <div class="text-2xl font-mono text-slate-400 tracking-widest mt-1">A • A • A</div>
+            </div>
+            <p class="text-xs text-slate-400 font-fun">Prepara para o ano letivo de maneira super lúdica.</p>
+          </div>
+
+          <!-- Footer of printable sheet -->
+          <div class="border-t border-slate-100 pt-2 flex justify-between items-center text-[10px] text-slate-400">
+            <span>Super Kit Digital • Dia das Crianças</span>
+            <span>Página 12</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Free Sample Download Card -->
+      <div class="mt-8 text-center max-w-lg mx-auto bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 p-5 rounded-2xl border border-indigo-100 shadow-sm">
+        <p class="text-xs sm:text-sm font-semibold text-slate-700">
+          Quer testar na sua impressora antes de garantir o combo completo?
+        </p>
+        <a href="amostra_super_kit_infantil.pdf" download="Amostra_Super_Kit_Infantil.pdf" class="mt-3 inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-slate-50 border-2 border-kids-purple text-kids-purple font-fun font-bold text-sm rounded-xl shadow-sm transition hover:shadow-md">
+          <span>📥 Baixar Amostra Grátis em PDF (5 Páginas)</span>
+        </a>
+        <p class="text-[11px] text-slate-400 mt-1.5">Download 100% gratuito e direto, sem precisar de cadastro!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing & Offers Section: Ofertas de Baixo Ticket -->
+  <section id="ofertas" class="py-14 sm:py-20 bg-gradient-to-b from-white via-indigo-50/40 to-white border-t border-slate-200/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto">
+        <span class="bg-red-100 text-red-700 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider">
+          🔥 Preço Promocional de Outubro
+        </span>
+        <h2 class="font-fun font-bold text-3xl sm:text-4xl text-slate-900 mt-2">
+          Escolha o pacote ideal para o seu pequeno:
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          Acesso imediato no seu e-mail e WhatsApp logo após a confirmação.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- Offer 1: Pacote Básico -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+          <div>
+            <div class="text-xs font-bold uppercase text-slate-500 tracking-wider">Opção Inicial</div>
+            <h3 class="font-fun font-bold text-xl sm:text-2xl text-slate-900 mt-1">Kit Essencial</h3>
+            <p class="text-xs text-slate-500 mt-1">Ideal para experimentar e colorir no final de semana.</p>
+
+            <div class="mt-6">
+              <span class="text-slate-400 line-through text-sm">De R$ 29,90</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-extrabold text-slate-900">R$ 9,99</span>
+                <span class="text-xs text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded">PAGAMENTO ÚNICO</span>
+              </div>
+            </div>
+
+            <ul class="mt-6 space-y-2.5 text-sm text-slate-600">
+              <li class="flex items-center gap-2">✓ <strong>+150 Atividades</strong> em PDF de Alta Qualidade</li>
+              <li class="flex items-center gap-2">✓ Caderno 1: Mundo de Colorir</li>
+              <li class="flex items-center gap-2">✓ Caderno 2: Labirintos e 7 Erros</li>
+              <li class="flex items-center gap-2">✓ Imprima quantas vezes quiser</li>
+              <li class="flex items-center gap-2">✓ Entrega Imediata por E-mail</li>
+              <li class="flex items-center gap-2 text-slate-400 line-through">✕ Não inclui os 3 Super Bônus</li>
+              <li class="flex items-center gap-2 text-slate-400 line-through">✕ Não inclui Caderno de Alfabetização</li>
+            </ul>
+          </div>
+
+          <button onclick="openCheckout('Kit Essencial (150 Atividades)', '9.99')" class="mt-8 w-full py-3.5 px-4 bg-slate-900 hover:bg-slate-800 text-white font-fun font-bold rounded-xl transition text-center shadow">
+            QUERO O KIT ESSENCIAL POR R$ 9,99
+          </button>
+        </div>
+
+        <!-- Offer 2: Super Combo VIP (Mais vendido) -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-kids-purple shadow-xl relative flex flex-col justify-between transform md:-translate-y-2">
+          
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-kids-purple to-kids-pink text-white text-xs font-bold py-1 px-4 rounded-full uppercase tracking-wider shadow">
+            ⭐ MAIS VENDIDO • MELHOR CUSTO-BENEFÍCIO
+          </div>
+
+          <div>
+            <div class="text-xs font-bold uppercase text-kids-purple tracking-wider">Super Combo VIP Dia das Crianças</div>
+            <h3 class="font-fun font-bold text-xl sm:text-2xl text-slate-900 mt-1">Kit Completo + 3 Bônus</h3>
+            <p class="text-xs text-slate-500 mt-1">O pacote completo com mais de 450 atividades e todos os bônus inclusos.</p>
+
+            <div class="mt-6">
+              <span class="text-slate-400 line-through text-sm">De R$ 67,00</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-extrabold text-kids-purple">R$ 17,99</span>
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">ECONOMIZE R$ 49</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">Menos de <strong>R$ 0,04 por atividade</strong> para você imprimir sempre!</p>
+            </div>
+
+            <ul class="mt-6 space-y-2.5 text-sm text-slate-700 font-medium">
+              <li class="flex items-center gap-2 text-slate-900 font-bold">✓ <strong>+450 Atividades em PDF</strong> (Coleção Completa)</li>
+              <li class="flex items-center gap-2">✓ Todos os 5 Cadernos Temáticos</li>
+              <li class="flex items-center gap-2 text-kids-purple font-bold">✓ Bônus 1: Quadro de Rotina Semanal</li>
+              <li class="flex items-center gap-2 text-kids-purple font-bold">✓ Bônus 2: Painel das Emoções Infantil</li>
+              <li class="flex items-center gap-2 text-kids-purple font-bold">✓ Bônus 3: Certificados de Pequeno Artista</li>
+              <li class="flex items-center gap-2 text-emerald-600 font-bold">✓ Acesso Vitalício + Atualizações Futuras</li>
+              <li class="flex items-center gap-2 text-emerald-600 font-bold">✓ Suporte via WhatsApp</li>
+            </ul>
+          </div>
+
+          <button onclick="openCheckout('Super Combo VIP (+450 Atividades + 3 Bônus)', '17.99')" class="mt-8 w-full py-4 px-4 bg-kids-green hover:bg-emerald-600 text-white font-fun font-bold text-lg rounded-xl shadow-lg transition-transform transform hover:scale-[1.02] text-center">
+            LEVAR O COMBO COMPLETO VIP POR R$ 17,99
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Trust signals bar -->
+      <div class="mt-12 bg-white rounded-2xl p-4 border border-slate-200/80 flex flex-wrap items-center justify-around gap-4 text-xs text-slate-600">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">🔒</span>
+          <span>Pagamento Seguro via <strong>PIX ou Cartão</strong></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-lg">⚡</span>
+          <span>Entrega <strong>Imediata e Automática</strong> por E-mail</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-lg">🛡️</span>
+          <span>Garantia Total de <strong>7 Dias</strong></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials: Depoimentos de Mães e Educadores -->
+  <section class="py-14 sm:py-20 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto">
+        <h2 class="font-fun font-bold text-2xl sm:text-3xl text-slate-900">
+          O que dizem os pais e educadores:
+        </h2>
+        <p class="text-slate-600 text-sm mt-1">Mais de 99% de aprovação e famílias mais tranquilas.</p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center font-bold text-pink-600">
+                MC
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900">Mariana Costa</h4>
+                <p class="text-xs text-slate-400">Mãe do Theo (4 anos) • São Paulo, SP</p>
+              </div>
+            </div>
+            <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              "Comprei ontem à noite e o material chegou no mesmo minuto no meu e-mail. Imprimi 10 folhas na impressora de casa e meu filho passou a manhã inteira entretido sem nem lembrar que o tablet existia. Valeu cada centavo!"
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-emerald-600 font-semibold">
+            ✓ Compra Verificada
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600">
+                RS
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900">Rodrigo & Carla</h4>
+                <p class="text-xs text-slate-400">Pais da Alice (6 anos) • Curitiba, PR</p>
+              </div>
+            </div>
+            <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              "Estávamos preocupados com o feriado do Dia das Crianças porque viagens estão caras. Compramos o kit e montamos uma mesinha de arte com canetinhas e tesourinha. O caderno de labirintos e o de recortar viraram febre aqui!"
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-emerald-600 font-semibold">
+            ✓ Compra Verificada
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-emerald-600">
+                PL
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-slate-900">Profa. Letícia Ramos</h4>
+                <p class="text-xs text-slate-400">Pedagoga da Educação Infantil • BH, MG</p>
+              </div>
+            </div>
+            <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              "Como professora, fiquei impressionada com o cuidado pedagógico. Os traçados de coordenação motora e o treino de letrinhas respeitam o ritmo das crianças. Uso na sala de aula e recomendo para todos os pais!"
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-emerald-600 font-semibold">
+            ✓ Compra Verificada
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How It Works Section: 3 passos simples -->
+  <section class="py-14 sm:py-16 bg-white border-t border-slate-200/60">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center">
+        <h2 class="font-fun font-bold text-2xl sm:text-3xl text-slate-900">Como você recebe o material?</h2>
+        <p class="text-slate-600 text-sm mt-1">Em menos de 2 minutos você já pode começar a imprimir:</p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-kids-purple/10 text-kids-purple rounded-full font-bold flex items-center justify-center mx-auto mb-3 text-lg">1</div>
+          <h4 class="font-bold text-slate-900">Pagamento Rápido</h4>
+          <p class="text-xs text-slate-500 mt-1">Conclua seu pedido com PIX ou Cartão em ambiente 100% criptografado e seguro.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-kids-purple/10 text-kids-purple rounded-full font-bold flex items-center justify-center mx-auto mb-3 text-lg">2</div>
+          <h4 class="font-bold text-slate-900">Receba no E-mail & WhatsApp</h4>
+          <p class="text-xs text-slate-500 mt-1">Seu link exclusivo de acesso aos arquivos PDF é enviado imediatamente após a aprovação.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-12 h-12 bg-kids-purple/10 text-kids-purple rounded-full font-bold flex items-center justify-center mx-auto mb-3 text-lg">3</div>
+          <h4 class="font-bold text-slate-900">Imprima e Divirta-se</h4>
+          <p class="text-xs text-slate-500 mt-1">Imprima as folhas que quiser na sua impressora ou gráfica rápida quantas vezes desejar!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee Section -->
+  <section class="py-12 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-6 sm:p-8 border border-amber-200/80 flex flex-col sm:flex-row items-center gap-6">
+        <div class="w-24 h-24 shrink-0 rounded-2xl bg-amber-400/20 border-2 border-amber-400 flex flex-col items-center justify-center text-center p-2 text-amber-700 font-fun">
+          <span class="text-2xl font-bold leading-none">7</span>
+          <span class="text-[10px] uppercase font-bold tracking-wider leading-tight">Dias de Garantia</span>
+        </div>
+        <div>
+          <h3 class="font-fun font-bold text-xl sm:text-2xl text-slate-900">
+            Risco Zero: Satisfação Garantida ou seu Dinheiro de Volta
+          </h3>
+          <p class="text-slate-600 text-sm mt-1 leading-relaxed">
+            Se você adquirir o Super Kit Digital e achar que ele não agradou seus pequenos ou não atendeu suas expectativas, basta enviar um único e-mail dentro de <strong>7 dias</strong> e nós devolveremos 100% do seu dinheiro, sem perguntas e sem letras miúdas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-14 sm:py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-8">
+        <h2 class="font-fun font-bold text-2xl sm:text-3xl text-slate-900">Perguntas Frequentes</h2>
+        <p class="text-slate-600 text-sm mt-1">Tire todas as suas dúvidas antes de garantir o kit:</p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- FAQ 1 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>Como eu vou receber o material?</span>
+            <span id="faq-icon-1" class="text-lg transition-transform font-bold text-kids-purple">+</span>
+          </button>
+          <div id="faq-content-1" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 pt-3 leading-relaxed">
+            O material é 100% digital em formato PDF. Imediatamente após a confirmação do pagamento, você recebe no seu e-mail e WhatsApp os links para baixar todos os cadernos e bônus no seu celular, computador ou tablet.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>Preciso de impressora colorida ou posso imprimir em preto e branco?</span>
+            <span id="faq-icon-2" class="text-lg transition-transform font-bold text-kids-purple">+</span>
+          </button>
+          <div id="faq-content-2" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 pt-3 leading-relaxed">
+            Pode imprimir em preto e branco sem problema algum! Todas as atividades foram desenhadas com traços nítidos e alto contraste especialmente para ficarem lindas em impressoras comuns monocromáticas, economizando tinta.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>Para qual idade o material é recomendado?</span>
+            <span id="faq-icon-3" class="text-lg transition-transform font-bold text-kids-purple">+</span>
+          </button>
+          <div id="faq-content-3" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 pt-3 leading-relaxed">
+            O Super Kit foi desenvolvido para crianças de <strong>2 a 10 anos</strong>. Ele possui desde desenhos com traços grossos para os menores até desafios de labirintos, 7 erros e matemática para crianças maiores.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(4)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>Posso imprimir quantas vezes eu quiser?</span>
+            <span id="faq-icon-4" class="text-lg transition-transform font-bold text-kids-purple">+</span>
+          </button>
+          <div id="faq-content-4" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 pt-3 leading-relaxed">
+            Sim! O acesso é vitalício. Uma vez baixado o arquivo no seu computador ou celular, você pode imprimir as mesmas páginas quantas vezes desejar — perfeito se você tiver mais de um filho ou se a criança quiser repetir o desenho!
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(5)" class="w-full text-left px-5 py-4 flex items-center justify-between font-semibold text-slate-800 text-sm sm:text-base focus:outline-none">
+            <span>O pagamento é seguro?</span>
+            <span id="faq-icon-5" class="text-lg transition-transform font-bold text-kids-purple">+</span>
+          </button>
+          <div id="faq-content-5" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 pt-3 leading-relaxed">
+            Totalmente seguro. Seus dados são processados com criptografia de ponta a ponta. Aceitamos PIX com aprovação imediata ou cartão de crédito.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Bar -->
+  <section class="py-12 bg-gradient-to-r from-kids-purple to-indigo-600 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-fun font-bold text-2xl sm:text-3xl">Pronto para transformar o Dia das Crianças dos seus filhos?</h2>
+      <p class="mt-2 text-sm text-indigo-100 max-w-xl mx-auto">Garanta o acesso vitalício com 70% de desconto e receba todo o material no seu e-mail agora mesmo.</p>
+      <div class="mt-6">
+        <a href="#ofertas" class="inline-block py-4 px-8 bg-kids-green hover:bg-emerald-600 text-white font-fun font-bold text-lg rounded-2xl shadow-xl transition transform hover:scale-105">
+          QUERO GARANTIR MEU ACESSO COM DESCONTO
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-10 text-xs border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-4">
+      <div class="font-fun text-lg text-white font-bold tracking-wide">
+        SUPER KIT DIGITAL DE ATIVIDADES INFANTIS
+      </div>
+      <p class="max-w-xl mx-auto text-slate-500">
+        Material digital para uso pessoal ou pedagógico. Todos os direitos reservados © 2026. Este site não é afiliado ao Facebook ou a qualquer entidade do Meta.
+      </p>
+      <div class="flex justify-center gap-4 text-slate-400">
+        <a href="#" class="hover:underline">Termos de Uso</a>
+        <span>•</span>
+        <a href="#" class="hover:underline">Políticas de Privacidade</a>
+        <span>•</span>
+        <a href="#" class="hover:underline">Contato & Suporte</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Checkout / Order Modal (Pushin Pay QR Code Transparente na Página) -->
+  <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/65 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+      
+      <!-- Close button -->
+      <button onclick="closeCheckout()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 transition">
+        ✕
+      </button>
+
+      <!-- VIEW 1: DADOS DO CLIENTE -->
+      <div id="checkout-form-view">
+        <div class="text-center">
+          <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase">
+            ⚡ Liberação Automática na Página
+          </span>
+          <h3 id="modal-product-title" class="font-fun font-bold text-xl text-slate-900 mt-2">
+            Super Combo VIP (+450 Atividades)
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">Preencha seus dados para gerar o QR Code PIX:</p>
+        </div>
+
+        <form id="checkout-form" onsubmit="handleGeneratePix(event)" class="mt-5 space-y-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Seu Nome Completo:</label>
+            <input type="text" id="cust-name" required placeholder="Ex: Patrícia Alves" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-kids-purple">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Seu Melhor E-mail (para envio do comprovante):</label>
+            <input type="email" id="cust-email" required placeholder="Ex: seuemail@gmail.com" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-kids-purple">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp:</label>
+            <input type="tel" id="cust-phone" required placeholder="(11) 99999-9999" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-kids-purple">
+          </div>
+
+          <div class="pt-2">
+            <div class="flex justify-between items-center text-sm font-bold text-slate-800 mb-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+              <span>Valor Total:</span>
+              <span id="modal-price" class="text-kids-purple font-extrabold text-xl">R$ 17,99</span>
+            </div>
+          </div>
+
+          <button type="submit" id="btn-submit-order" class="w-full py-3.5 px-4 bg-kids-green hover:bg-emerald-600 text-white font-fun font-bold text-base rounded-xl transition shadow-lg flex items-center justify-center gap-2">
+            <span>GERAR QR CODE PIX</span>
+          </button>
+
+          <p class="text-[11px] text-center text-slate-400 mt-2">
+            🔒 Pagamento processado de forma instantânea e 100% segura.
+          </p>
+        </form>
+      </div>
+
+      <!-- VIEW 2: QR CODE PIX GERADO NA PÁGINA (CAKTO) -->
+      <div id="checkout-pix-view" class="hidden text-center py-2">
+        <span class="inline-block bg-purple-100 text-kids-purple text-xs font-bold px-3 py-1 rounded-full uppercase">
+          📱 QR Code PIX Cakto Gerado
+        </span>
+        <h4 id="pix-modal-title" class="font-fun font-bold text-lg text-slate-900 mt-2">
+          Super Combo VIP (+450 Atividades)
+        </h4>
+
+        <!-- Preço e Indicador de Status -->
+        <div class="my-2">
+          <span class="text-xs text-slate-500">Valor a Pagar: </span>
+          <span id="pix-display-price" class="text-kids-purple font-extrabold text-2xl">R$ 17,99</span>
+        </div>
+
+        <!-- Pulse Badge Status -->
+        <div class="mb-3">
+          <span id="pix-status-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
+            <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+            Aguardando pagamento no seu banco...
+          </span>
+        </div>
+
+        <!-- Imagem do QR Code -->
+        <div class="relative w-48 h-48 mx-auto my-2 bg-white rounded-2xl p-2 border-2 border-slate-200 shadow-md flex items-center justify-center">
+          <img id="pix-qr-img" class="w-full h-full object-contain rounded-xl" src="" alt="QR Code PIX">
+          <div id="pix-loading-spinner" class="absolute inset-0 bg-white/90 rounded-2xl flex flex-col items-center justify-center text-xs font-bold text-slate-600">
+            <div class="w-8 h-8 border-4 border-kids-purple border-t-transparent rounded-full animate-spin mb-2"></div>
+            Gerando QR Code Cakto...
+          </div>
+        </div>
+
+        <p class="text-xs text-slate-500 mt-2">
+          Abra o app do seu banco, escolha <strong>Pagar com PIX</strong> e aponte a câmera ou use o código abaixo:
+        </p>
+
+        <!-- Campo Pix Copia e Cola -->
+        <div class="mt-3">
+          <div class="flex items-center gap-1 bg-slate-100 p-2 rounded-xl border border-slate-200">
+            <input type="text" id="pix-copy-input" readonly value="" class="w-full text-[11px] font-mono bg-transparent text-slate-700 select-all focus:outline-none">
+          </div>
+          <button onclick="copyPixCode()" id="btn-copy-pix" class="mt-2 w-full py-2.5 px-3 bg-kids-purple hover:bg-indigo-700 text-white font-fun font-bold text-xs rounded-xl shadow transition flex items-center justify-center gap-1.5">
+            <span>📋 COPIAR CÓDIGO PIX (COPIA E COLA)</span>
+          </button>
+        </div>
+
+        <!-- Link Direto Cakto Fallback -->
+        <div class="mt-2 text-center">
+          <a id="cakto-direct-link" href="#" target="_blank" class="text-[11px] text-kids-purple hover:underline font-semibold hidden">
+            🔒 Preferir abrir no checkout da Cakto? Clique aqui
+          </a>
+        </div>
+
+        <!-- Timer de Expiração e Simulação para Testes -->
+        <div class="mt-3 flex items-center justify-between text-[11px] text-slate-400">
+          <span>⏳ Expira em: <strong id="pix-expires-timer" class="text-slate-600">09:59</strong></span>
+          <button type="button" onclick="simulatePixPaymentSuccess()" class="text-kids-purple hover:underline font-semibold">
+            ⚡ Simular Aprovação
+          </button>
+        </div>
+      </div>
+
+      <!-- VIEW 3: SUCESSO / DOWNLOAD LIBERADO NA PÁGINA -->
+      <div id="checkout-success-view" class="hidden text-center py-4">
+        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-3 shadow-inner">
+          ✓
+        </div>
+        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase">
+          🎉 Pagamento Aprovado com Sucesso!
+        </span>
+        <h3 class="font-fun font-bold text-2xl text-slate-900 mt-2">
+          Parabéns! Seu Acesso Está Liberado!
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Obrigado pela sua compra. Você já pode baixar os arquivos completos abaixo:
+        </p>
+
+        <!-- Action Download Buttons -->
+        <div class="mt-6 space-y-3">
+          <a href="amostra_super_kit_infantil.pdf" download="Super_Kit_Atividades_Infantis.pdf" class="block w-full py-3.5 px-4 bg-kids-green hover:bg-emerald-600 text-white font-fun font-bold text-base rounded-xl transition shadow-lg text-center">
+            📥 BAIXAR CADERNOS DE ATIVIDADES EM PDF
+          </a>
+
+          <a href="amostra_super_kit_infantil.pdf" download="Bonus_Especiais_Dia_das_Criancas.pdf" class="block w-full py-3 px-4 bg-kids-purple hover:bg-indigo-700 text-white font-fun font-bold text-sm rounded-xl transition shadow text-center">
+            🎁 BAIXAR OS 3 SUPER BÔNUS EXCLUSIVOS
+          </a>
+
+          <a id="whatsapp-success-link" href="#" target="_blank" class="block w-full py-2.5 px-4 bg-[#25D366] hover:bg-emerald-600 text-white font-bold text-xs rounded-xl transition text-center shadow">
+            💬 Receber os Links Também no WhatsApp
+          </a>
+        </div>
+
+        <p class="text-[11px] text-slate-400 mt-4">
+          Uma cópia dos links de download também foi enviada para o seu e-mail cadastrado.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // ==========================================
+    // 1. URGENCY COUNTDOWN TIMER
+    // ==========================================
+    let totalSeconds = 11 * 60 + 48;
+    const timerEl = document.getElementById('timer');
+    setInterval(() => {
+      if (totalSeconds > 0) {
+        totalSeconds--;
+        const m = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
+        const s = (totalSeconds % 60).toString().padStart(2, '0');
+        timerEl.textContent = `${m}:${s}`;
+      }
+    }, 1000);
+
+    // ==========================================
+    // 2. INTERACTIVE SHEET PREVIEW SWITCHER
+    // ==========================================
+    function switchPreview(tabId) {
+      document.querySelectorAll('.preview-tab').forEach(tab => {
+        tab.classList.remove('bg-kids-purple', 'text-white', 'shadow');
+        tab.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      document.querySelectorAll('.preview-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+
+      const activeTab = document.getElementById(`tab-${tabId}`);
+      if (activeTab) {
+        activeTab.classList.add('bg-kids-purple', 'text-white', 'shadow');
+        activeTab.classList.remove('bg-slate-100', 'text-slate-700');
+      }
+
+      const activeContent = document.getElementById(`preview-${tabId}`);
+      if (activeContent) {
+        activeContent.classList.remove('hidden');
+      }
+    }
+
+    // ==========================================
+    // 3. FAQ ACCORDION TOGGLE
+    // ==========================================
+    function toggleFaq(id) {
+      const content = document.getElementById(`faq-content-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+      const isHidden = content.classList.contains('hidden');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+
+    // ==========================================
+    // 4. CAKTO API & IN-PAGE CHECKOUT MODAL
+    // ==========================================
+    let currentSelectedProduct = "Super Combo VIP (+450 Atividades + 3 Bônus)";
+    let currentSelectedPrice = "17.99";
+    let activePixTransactionId = null;
+    let pixPollingInterval = null;
+    let pixCountdownInterval = null;
+
+    /*
+      CONFIGURAÇÃO CAKTO:
+      - Chamadas processadas via /api/create-pix usando as credenciais oficiais da Cakto.
+      - Se rodar estático, usa o gerador nativo em tela e QR Code com fallback automático.
+    */
+    const CAKTO_CONFIG = {
+      apiCreateUrl: "/api/create-pix",
+      apiCheckUrl: "/api/check-pix",
+      whatsappSupport: "5511999999999" // Coloque seu WhatsApp aqui
+    };
+
+    function openCheckout(productName, price) {
+      currentSelectedProduct = productName;
+      currentSelectedPrice = price;
+
+      if (window.YCZTrack) window.YCZTrack.event('checkout_open', productName);
+
+      document.getElementById('modal-product-title').textContent = productName;
+      document.getElementById('modal-price').textContent = `R$ ${price.replace('.', ',')}`;
+
+      // Reset view states
+      document.getElementById('checkout-form-view').classList.remove('hidden');
+      document.getElementById('checkout-pix-view').classList.add('hidden');
+      document.getElementById('checkout-success-view').classList.add('hidden');
+      document.getElementById('cakto-direct-link').classList.add('hidden');
+      
+      // Clear timers
+      if (pixPollingInterval) clearInterval(pixPollingInterval);
+      if (pixCountdownInterval) clearInterval(pixCountdownInterval);
+
+      document.getElementById('checkout-modal').classList.remove('hidden');
+    }
+
+    function closeCheckout() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+      if (pixPollingInterval) clearInterval(pixPollingInterval);
+      if (pixCountdownInterval) clearInterval(pixCountdownInterval);
+    }
+
+    async function handleGeneratePix(e) {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value.trim();
+      const email = document.getElementById('cust-email').value.trim();
+      const phone = document.getElementById('cust-phone').value.trim();
+      const valueInCents = Math.round(parseFloat(currentSelectedPrice) * 100);
+
+      // Transição para tela de QR Code
+      document.getElementById('checkout-form-view').classList.add('hidden');
+      document.getElementById('checkout-pix-view').classList.remove('hidden');
+      document.getElementById('pix-loading-spinner').classList.remove('hidden');
+      
+      document.getElementById('pix-modal-title').textContent = currentSelectedProduct;
+      document.getElementById('pix-display-price').textContent = `R$ ${currentSelectedPrice.replace('.', ',')}`;
+
+      // Tenta chamar o endpoint da Cakto
+      try {
+        const response = await fetch(CAKTO_CONFIG.apiCreateUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            phone: phone,
+            value: valueInCents,
+            product: currentSelectedProduct
+          })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          renderPixCode(data.qr_code, data.qr_code_base64, data.id, data.checkout_url);
+          startPixPolling(data.id);
+        } else {
+          fallbackLocalPixGenerator(name, email, phone, currentSelectedPrice);
+        }
+      } catch (err) {
+        console.warn("Servidor Cakto local não respondeu, usando gerador QR Code de demonstração:", err);
+        fallbackLocalPixGenerator(name, email, phone, currentSelectedPrice);
+      }
+
+      // Inicia timer de 10 minutos para expiração do QR Code
+      startPixExpirationTimer(600);
+    }
+
+    function renderPixCode(pixCopiaCola, qrcodeImgData, transactionId, checkoutUrl) {
+      activePixTransactionId = transactionId;
+      document.getElementById('pix-copy-input').value = pixCopiaCola;
+      
+      const qrImg = document.getElementById('pix-qr-img');
+      if (qrcodeImgData && qrcodeImgData.startsWith('data:')) {
+        qrImg.src = qrcodeImgData;
+      } else if (qrcodeImgData && !qrcodeImgData.startsWith('http')) {
+        qrImg.src = `data:image/png;base64,${qrcodeImgData}`;
+      } else if (qrcodeImgData) {
+        qrImg.src = qrcodeImgData;
+      } else {
+        qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(pixCopiaCola)}`;
+      }
+
+      if (checkoutUrl) {
+        const directLink = document.getElementById('cakto-direct-link');
+        if (directLink) {
+          directLink.href = checkoutUrl;
+          directLink.classList.remove('hidden');
+        }
+      }
+
+      document.getElementById('pix-loading-spinner').classList.add('hidden');
+      if (window.YCZTrack) window.YCZTrack.event('pix_gerado', `R$ ${currentSelectedPrice}`);
+    }
+
+    function fallbackLocalPixGenerator(name, email, phone, price) {
+      const randomTx = "CAKTO" + Math.floor(Math.random() * 90000000 + 10000000);
+      const samplePix = `00020126360014BR.GOV.BCB.PIX0114+${CAKTO_CONFIG.whatsappSupport}520400005303986540${price.replace('.', '')}5802BR5916SUPER KIT KIDS6009SAO PAULO62070503***6304${randomTx.slice(0,4)}`;
+      
+      const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(samplePix)}`;
+      renderPixCode(samplePix, qrUrl, randomTx);
+    }
+
+    function startPixPolling(txId) {
+      if (pixPollingInterval) clearInterval(pixPollingInterval);
+      if (!txId) return;
+
+      pixPollingInterval = setInterval(async () => {
+        try {
+          const res = await fetch(`${CAKTO_CONFIG.apiCheckUrl}?id=${txId}`);
+          if (res.ok) {
+            const data = await res.json();
+            if (data.status === "paid" || data.status === "approved" || data.status === "pago") {
+              clearInterval(pixPollingInterval);
+              onPixPaidSuccess();
+            }
+          }
+        } catch (e) {
+          // Polling silenciado
+        }
+      }, 3000);
+    }
+
+    function startPixExpirationTimer(seconds) {
+      if (pixCountdownInterval) clearInterval(pixCountdownInterval);
+      let s = seconds;
+      const el = document.getElementById('pix-expires-timer');
+      
+      pixCountdownInterval = setInterval(() => {
+        if (s <= 0) {
+          clearInterval(pixCountdownInterval);
+          el.textContent = "Expirado";
+          document.getElementById('pix-status-badge').innerHTML = "⚠️ Código expirado. Feche e gere um novo.";
+          document.getElementById('pix-status-badge').classList.replace('bg-amber-100', 'bg-rose-100');
+          document.getElementById('pix-status-badge').classList.replace('text-amber-800', 'text-rose-800');
+        } else {
+          s--;
+          const m = Math.floor(s / 60).toString().padStart(2, '0');
+          const sec = (s % 60).toString().padStart(2, '0');
+          el.textContent = `${m}:${sec}`;
+        }
+      }, 1000);
+    }
+
+    function copyPixCode() {
+      const copyInput = document.getElementById('pix-copy-input');
+      copyInput.select();
+      copyInput.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyInput.value);
+
+      const btn = document.getElementById('btn-copy-pix');
+      const oldHtml = btn.innerHTML;
+      btn.innerHTML = "<span>✓ CÓDIGO PIX COPIADO!</span>";
+      btn.classList.replace('bg-kids-purple', 'bg-emerald-600');
+      setTimeout(() => {
+        btn.innerHTML = oldHtml;
+        btn.classList.replace('bg-emerald-600', 'bg-kids-purple');
+      }, 2500);
+    }
+
+    function simulatePixPaymentSuccess() {
+      if (pixPollingInterval) clearInterval(pixPollingInterval);
+      if (pixCountdownInterval) clearInterval(pixCountdownInterval);
+      onPixPaidSuccess();
+    }
+
+    function onPixPaidSuccess() {
+      if (window.YCZTrack) window.YCZTrack.event('venda_paga', `R$ ${currentSelectedPrice}`);
+
+      document.getElementById('checkout-pix-view').classList.add('hidden');
+      document.getElementById('checkout-success-view').classList.remove('hidden');
+
+      // Link do WhatsApp de confirmação pós-venda
+      const name = document.getElementById('cust-name').value || "Cliente";
+      const msg = encodeURIComponent(`Olá! Meu pagamento do ${currentSelectedProduct} (R$ ${currentSelectedPrice}) foi aprovado!\n\nNome: ${name}\nGostaria de confirmar o recebimento dos PDFs.`);
+      document.getElementById('whatsapp-success-link').href = `https://api.whatsapp.com/send?phone=${CAKTO_CONFIG.whatsappSupport}&text=${msg}`;
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCheckout();
+    });
+  </script>
+  <!-- Rastreamento ao Vivo do Painel Admin -->
+  <script src="track.js"></script>
+</body>
+</html>

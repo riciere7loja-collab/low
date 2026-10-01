@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Painel Admin • Super Kit Digital</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div id="login" class="login hidden">
+    <div class="login-card">
+      <div class="login-logo">KIDS<span>®</span></div>
+      <div class="login-sub">PAINEL ADMINISTRATIVO</div>
+      <input id="login-pwd" type="password" placeholder="Senha de acesso (padrão: 2209)" autocomplete="current-password" />
+      <button id="login-btn">Entrar</button>
+      <div id="login-err" class="login-err"></div>
+    </div>
+  </div>
+
+  <!-- APP -->
+  <div id="app" class="app hidden">
+    <aside class="side">
+      <div class="side-logo">KIDS<span>®</span><em>admin</em></div>
+      <nav>
+        <button class="nav-item active" data-view="overview"><i>◆</i>Visão geral</button>
+        <button class="nav-item" data-view="orders"><i>▤</i>Pedidos<b id="nav-pending" class="nav-badge hidden"></b></button>
+        <button class="nav-item" data-view="live"><i>●</i>Ao vivo<b id="nav-online" class="nav-badge live hidden"></b></button>
+        <button class="nav-item" data-view="pixels"><i>◈</i>Integrações</button>
+      </nav>
+      <div class="side-foot">
+        <a href="/" target="_blank" class="side-link">↗ Ver loja</a>
+        <button id="logout" class="side-link">⎋ Sair</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- VISÃO GERAL -->
+      <section id="view-overview" class="view">
+        <header class="page-head">
+          <h1>Visão geral</h1>
+          <span class="updated" id="ov-updated"></span>
+        </header>
+        <div class="stats" id="stat-cards"></div>
+        <div class="grid grid-23">
+          <div class="card">
+            <div class="card-head"><h3>Receita — últimos 30 dias</h3><span class="card-tag" id="rev30-total"></span></div>
+            <div class="chart-wrap"><canvas id="ch-revenue"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Funil de hoje</h3></div>
+            <div id="funnel" class="funnel"></div>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-head"><h3>Vendas por hora — hoje</h3></div>
+            <div class="chart-wrap sm"><canvas id="ch-hours"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Métodos de pagamento</h3></div>
+            <div class="chart-wrap sm"><canvas id="ch-methods"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Vendas por kit</h3></div>
+            <div class="chart-wrap sm"><canvas id="ch-kits"></canvas></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h3>Últimos pedidos</h3><button class="btn-ghost" data-view-link="orders">Ver todos →</button></div>
+          <div class="table-wrap"><table id="recent-table"></table></div>
+        </div>
+      </section>
+
+      <!-- PEDIDOS -->
+      <section id="view-orders" class="view hidden">
+        <header class="page-head">
+          <h1>Pedidos</h1>
+          <button id="csv-btn" class="btn-ghost">⬇ Exportar CSV</button>
+        </header>
+        <div class="toolbar">
+          <input id="order-search" placeholder="Buscar por nome, e-mail, pedido…" />
+          <div class="chips" id="status-chips">
+            <button class="chip active" data-st="">Todos</button>
+            <button class="chip" data-st="paid">Pagos</button>
+            <button class="chip" data-st="pending">Pendentes</button>
+            <button class="chip" data-st="expired">Expirados</button>
+            <button class="chip" data-st="failed">Falhos</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="table-wrap"><table id="orders-table"></table></div>
+          <div id="orders-empty" class="empty hidden">Nenhum pedido encontrado.</div>
+        </div>
+      </section>
+
+      <!-- AO VIVO -->
+      <section id="view-live" class="view hidden">
+        <header class="page-head">
+          <h1>Ao vivo</h1>
+          <span class="updated" id="live-updated"></span>
+        </header>
+        <div class="grid grid-23">
+          <div class="card globe-card">
+            <div class="globe-overlay">
+              <div class="globe-online"><span class="dot-live"></span><b id="live-count">0</b></div>
+              <div class="live-label">VISITANTES AGORA</div>
+              <div class="live-split" id="live-split"></div>
+            </div>
+            <div id="globe"></div>
+            <div class="globe-cities" id="globe-cities"></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Atividade recente</h3></div>
+            <div id="event-feed" class="feed"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h3>Sessões ativas</h3></div>
+          <div class="table-wrap"><table id="live-table"></table></div>
+          <div id="live-empty" class="empty hidden">Ninguém navegando agora.</div>
+        </div>
+      </section>
+
+      <!-- PIXELS -->
+      <section id="view-pixels" class="view hidden">
+        <header class="page-head">
+          <h1>Integrações</h1>
+        </header>
+        <div class="grid grid-23">
+          <div>
+            <div class="card">
+              <div class="card-head"><h3>Gateway de pagamento — ProPix</h3><span class="card-tag" id="gw-status"></span></div>
+              <div class="px-form">
+                <div class="px-field">
+                  <label>Client ID da ProPix</label>
+                  <input id="gw-client-id" placeholder="Cole seu Client ID da ProPix (ex.: live_...)" autocomplete="off" />
+                  <small>Painel ProPix → Configurações / API → Client ID.</small>
+                </div>
+                <div class="px-field">
+                  <label>Client Secret da ProPix</label>
+                  <input id="gw-client-secret" type="password" placeholder="Cole seu Client Secret da ProPix (sk_...)" autocomplete="off" />
+                  <small id="gw-secret-hint">Painel ProPix → Configurações / API → Client Secret.</small>
+                </div>
+                <button class="btn-primary" id="gw-save">Salvar chaves ProPix</button>
+                <div id="gw-msg" class="px-msg"></div>
+
+                <div class="px-field" style="margin-top:16px;border-top:1px solid rgba(255,255,255,.07);padding-top:14px">
+                  <label>URL de Notificação / Webhook (ProPix)</label>
+                  <input id="gw-webhook-url" readonly style="font-family:monospace;font-size:12px;cursor:pointer" onclick="this.select()" />
+                  <small>Cadastre esta URL no painel da ProPix (Webhooks) para confirmação automática das vendas mesmo se o cliente fechar o navegador antes de pagar.</small>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <div class="card-head"><h3>Pixels de rastreamento</h3><span class="card-tag" id="px-status"></span></div>
+              <div class="px-form">
+                <div class="px-field">
+                  <label>Meta Pixel ID</label>
+                  <input id="px-meta" placeholder="Ex.: 977856966959843" inputmode="numeric" />
+                  <small>Gerenciador de Eventos → seu pixel → o número no topo.</small>
+                </div>
+                <div class="px-field">
+                  <label>Token da Conversions API (CAPI)</label>
+                  <input id="px-capi" placeholder="Cole o token gerado no Gerenciador de Eventos" autocomplete="off" />
+                  <small id="px-capi-hint">Necessário para enviar Purchase pelo servidor (recupera vendas de quem fecha a página antes de pagar o Pix).</small>
+                </div>
+                <button class="btn-primary" id="px-save">Salvar configuração</button>
+                <div id="px-msg" class="px-msg"></div>
+              </div>
+            </div>
+            <div class="card" style="margin-top:16px">
+              <div class="card-head"><h3>Teste de verificação</h3></div>
+              <p class="px-desc">Roda uma checagem real: valida os IDs e envia um evento de teste à Meta pela CAPI. Cole o código da aba <b>Testar eventos</b> (ex.: TEST12345) para ver o evento aparecer lá em segundos.</p>
+              <div class="px-test-row">
+                <input id="px-testcode" placeholder="Código de teste (opcional)" />
+                <button class="btn-primary" id="px-test">▶ Testar integração</button>
+              </div>
+              <div id="px-results" class="px-results"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Tutorial de integração</h3></div>
+            <div class="tut">
+              <details open>
+                <summary>1 · Meta Pixel (obrigatório p/ anúncios)</summary>
+                <ol>
+                  <li>Abra o <b>Gerenciador de Eventos</b> da Meta (business.facebook.com/events_manager2).</li>
+                  <li>Selecione o pixel da sua conta de anúncios (ou crie um em Conectar dados → Web).</li>
+                  <li>Copie o <b>ID do conjunto de dados</b> (número de 15-16 dígitos no topo).</li>
+                  <li>Cole no campo ao lado e salve. Pronto: a loja passa a disparar <b>PageView, InitiateCheckout, AddPaymentInfo e Purchase</b>.</li>
+                </ol>
+              </details>
+              <details>
+                <summary>2 · Token da CAPI (recomendado)</summary>
+                <ol>
+                  <li>No mesmo pixel, abra <b>Configurações</b>.</li>
+                  <li>Desça até <b>API de conversões</b> → <b>Gerar token de acesso</b>.</li>
+                  <li>Copie o token (começa com EAA…) e cole aqui.</li>
+                  <li>Com ele, toda venda confirmada pelo webhook vira um <b>Purchase server-side</b> — com deduplicação automática contra o evento do navegador.</li>
+                </ol>
+              </details>
+              <details>
+                <summary>3 · Como conferir se está tudo certo</summary>
+                <ol>
+                  <li>Use o botão <b>Testar integração</b> ao lado.</li>
+                  <li>Instale a extensão <b>Meta Pixel Helper</b> no Chrome e abra a loja: o pixel deve aparecer verde com PageView.</li>
+                  <li>Na aba <b>Testar eventos</b> do Gerenciador, abra a loja com o código de teste e veja os eventos chegando ao vivo.</li>
+                </ol>
+              </details>
+              <details>
+                <summary>4 · Webhook ProPix (recuperar 100% das vendas)</summary>
+                <ol>
+                  <li>No painel da <b>ProPix</b> (app.propixbr.com), vá em <b>Configurações</b> ou <b>Webhooks</b>.</li>
+                  <li>Cole a URL de Notificação informada acima: <code>.../api/webhook/propix</code>.</li>
+                  <li>Pronto! Quando o cliente pagar no app do banco e fechar o navegador, a ProPix avisa o site e a venda é confirmada na hora no seu painel.</li>
+                </ol>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- DRAWER PEDIDO -->
+  <div id="drawer" class="drawer hidden">
+    <div class="drawer-back"></div>
+    <div class="drawer-panel" id="drawer-body"></div>
+  </div>
+
+  <script src="vendor-chart.js"></script>
+  <script src="vendor-globe.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
