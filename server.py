@@ -10,7 +10,14 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 PORT = 3000
 CONFIG_FILE = "config.json"
+LOCAL_CONFIG = "config.local.json"
 ORDERS_FILE = "orders.json"
+
+def get_app_config():
+    cfg = load_json(CONFIG_FILE, {})
+    if os.path.exists(LOCAL_CONFIG):
+        cfg.update(load_json(LOCAL_CONFIG, {}))
+    return cfg
 
 # Cache de token da Cakto para evitar autenticação repetida a cada requisição
 cakto_token_cache = {
@@ -62,7 +69,7 @@ def get_cakto_access_token():
     if cakto_token_cache["token"] and now < cakto_token_cache["expires_at"]:
         return cakto_token_cache["token"]
 
-    cfg = load_json(CONFIG_FILE, {})
+    cfg = get_app_config()
     client_id = cfg.get("CAKTO_CLIENT_ID", "").strip()
     client_secret = cfg.get("CAKTO_CLIENT_SECRET", "").strip()
 
@@ -133,7 +140,7 @@ class CustomHandler(SimpleHTTPRequestHandler):
             cust_phone = payload.get("phone", "")
             product = payload.get("product", "Super Combo VIP")
             
-            cfg = load_json(CONFIG_FILE, {})
+            cfg = get_app_config()
             raw_offer = cfg.get("CAKTO_OFFER_KIT_1", "q3ekihz_1162890") if value_cents <= 1000 else cfg.get("CAKTO_OFFER_KIT_2", "bvdwj3n_1162919")
             offer_id = raw_offer.split("_")[0]
             checkout_slug = raw_offer
@@ -325,7 +332,7 @@ class CustomHandler(SimpleHTTPRequestHandler):
         # 6. API: CONFIGURAÇÕES (/api/admin/settings)
         # ----------------------------------------------------
         if self.path == '/api/admin/settings':
-            cfg = load_json(CONFIG_FILE, {})
+            cfg = get_app_config()
             cfg.update(payload)
             save_json(CONFIG_FILE, cfg)
             return self.send_json(200, { "ok": True, "settings": cfg })
@@ -442,13 +449,13 @@ class CustomHandler(SimpleHTTPRequestHandler):
         # 5. API: CONFIGURAÇÕES (/api/admin/settings)
         # ----------------------------------------------------
         if clean_path == '/api/admin/settings' or clean_path == '/api/settings':
-            cfg = load_json(CONFIG_FILE, {})
+            cfg = get_app_config()
             return self.send_json(200, { "settings": cfg })
 
         super().do_GET()
 
 def run_server():
-    cfg = load_json(CONFIG_FILE, {})
+    cfg = get_app_config()
     port = cfg.get("PORT", PORT)
     server_address = ('', port)
     httpd = HTTPServer(server_address, CustomHandler)

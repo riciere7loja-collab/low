@@ -2,8 +2,11 @@
   command = "echo 'Static site ready'"
   publish = "."
   functions = "netlify/functions"
-  SECRETS_SCAN_ENABLED = false
-  SECRETS_SCAN_OMIT_KEYS = ["CAKTO_CLIENT_ID", "CAKTO_CLIENT_SECRET"]
+
+[build.environment]
+  SECRETS_SCAN_ENABLED = "false"
+  SECRETS_SCAN_OMIT_PATHS = "config.json"
+
 
 # ==============================================================================
 # REDIRECTS DO PAINEL ADMINISTRATIVO & TRACKING
